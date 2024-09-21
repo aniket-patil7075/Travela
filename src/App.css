@@ -2,6 +2,10 @@
   background-color: #13357B;
 }
 
+.blue1:hover{
+  background-color: #13357B;
+}
+
 .navbar-light{
   position: absolute;
   right: 0%;
@@ -10,3 +14,27 @@
 #navbarScrollingDropdown::after {
   border-top-color: #f8f9fa; 
 }
+
+.navbar{
+  position:absolute;
+  z-index: 2;
+}
+
+.carousel .carousel-item{
+  height: 900px;
+  margin-top: -70px;
+}
+
+.carousel-caption {
+  position: absolute; /* Positioning to allow centering */
+  top: 25%; 
+}
+
+.fontSize{
+  font-size: 65px;
+}
+
+
+
+
+
