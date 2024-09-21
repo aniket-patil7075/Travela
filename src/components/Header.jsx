@@ -7,43 +7,116 @@ import { FaYoutube } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaArrowRightToBracket } from "react-icons/fa6";
 import { FaHome } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 function Header() {
     return (
         <div>
-            <div className='blue container-fluid px-5 py-2'>
+            <div className='blue container-fluid px-4 py-2 d-none d-lg-block'>
                 <span className='d-flex text-light'>
-                    <FaTwitter className='border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
+                    <div className='ps-4'>
+                        <FaTwitter className='border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
 
-                    <FaFacebookF className='border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
+                        <FaFacebookF className='border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
 
-                    <FaLinkedinIn className='border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
+                        <FaLinkedinIn className='border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
 
-                    <FaInstagram className='border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
+                        <FaInstagram className='border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
 
-                    <FaYoutube className='border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
+                        <FaYoutube className='border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
+                    </div>
 
+                    {/* -------------------------------------------------------- */}
 
-                    <FaUser className='py-2' style={{ width: "35px", height: "35px" }} />
-                    <span className='py-1 pe-2'>Register</span>
+                    <FaUser className='py-2 px-2' style={{ width: "35px", height: "35px", marginLeft: "700px" }} />
+                    <span className='py-1 me-3'>Register</span>
 
-                    <FaArrowRightToBracket  className='py-2' style={{ width: "35px", height: "35px" }}/><span className='py-1 pe-2'>Login</span>
+                    <FaArrowRightToBracket className='py-2 px-2' style={{ width: "40px", height: "35px" }} /><span className='py-1 me-3'>Login</span>
 
-                    <FaHome  className='py-2' style={{ width: "35px", height: "35px" }}/>
+                    <FaHome className='py-2 px-2' style={{ width: "40px", height: "35px" }} />
                     <NavDropdown
                         id="nav-dropdown-dark-example"
                         title="My Dashboard"
-                        menuVariant="dark"
+                        menuVariant="light"
                         className='py-1'
                     >
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.1" className=''>My Profile</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">
-                            Another action
+                            Inbox
                         </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">Notifications</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.4">Account Settings</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.5">Log Out</NavDropdown.Item>
 
                     </NavDropdown></span>
+            </div>
+            <div className=''>
+                <Navbar expand="lg" className="ps-lg-4 ps-md-3 bg-primary  py-4" >
+                    <Container fluid>
+                        <h1 className='ps-2 text-light'><FaLocationDot className='me-1' />Travela</h1>
+                        {/* <Navbar.Brand href="#"><h1>Travela</h1></Navbar.Brand> */}
+                        <Navbar.Toggle aria-controls="navbarScroll" />
+                        <Navbar.Collapse id="navbarScroll">
+                            <Nav
+                                className="navbar-light me-auto my-2 my-lg-0"
+                                style={{ maxHeight: '100px' }}
+                                navbarScroll
+                            >
+                                <div className='blue py-3 px-3' style={{ marginTop: '-3px' }}>
+                                    <Nav.Link href="#action1" className='fw-bold py-4 text-light'>Home</Nav.Link>
+                                </div>
+                                <div className='blue py-3 px-3' style={{ marginTop: '-3px' }}>
+                                    <Nav.Link href="#action2" className='fw-bold py-4 text-light'>About</Nav.Link>
+                                </div>
+                                <div className='blue py-3 px-3' style={{ marginTop: '-3px' }}>
+                                    <Nav.Link href="#action2" className='fw-bold py-4 text-light'>Services</Nav.Link>
+                                </div>
+                                <div className='blue py-3 px-3' style={{ marginTop: '-3px' }}>
+                                    <Nav.Link href="#action2" className='fw-bold py-4 text-light'>Packages</Nav.Link>
+                                </div>
+                                <div className='blue py-3 px-3' style={{ marginTop: '-3px' }}>
+                                    <Nav.Link href="#action2" className='fw-bold py-4 text-light'>Blog</Nav.Link>
+                                </div>
+                                <div className='blue py-3 px-3' style={{ marginTop: '-3px' }}>
+                                    <NavDropdown title={<span className="text-light">Pages</span>} className='fw-bold py-3  text-light' id="navbarScrollingDropdown" >
+                                        <NavDropdown.Item href="#action3">Destination</NavDropdown.Item>
+                                        <NavDropdown.Item href="#action4">
+                                            Explore Tour
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Item href="#action5">
+                                            Travel Booking
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Item href="#action5">
+                                            Our Gallery
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Item href="#action5">
+                                            Travel Guides
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Item href="#action5">
+                                            Testimonials
+                                        </NavDropdown.Item>
+                                    </NavDropdown>
+                                </div>
+                                <div className='blue py-3 px-3' style={{ marginTop: '-3px' }}>
+                                    <Nav.Link href="#action2" className='fw-bold py-4 text-light'>Contact</Nav.Link>
+                                </div>
+                                <div className=' py-3 px-3' style={{ marginTop: '-3px' }}>
+                                    <Button variant="" className='fw-bold ms-3 py-2 mt-3 rounded rounded-pill text-light me-5' style={{ backgroundColor: '#13357b' }}>Book Now</Button>
+                                </div>
+                            </Nav>
+
+
+
+
+                        </Navbar.Collapse>
+                    </Container>
+                </Navbar>
             </div>
         </div>
     )
