@@ -54,20 +54,21 @@ function Header() {
                         <NavDropdown.Item href="#action/3.4">Account Settings</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.5">Log Out</NavDropdown.Item>
 
-                    </NavDropdown></span>
+                    </NavDropdown>
+                    </span>
             </div>
             <div className='' >
-                <Navbar expand="lg" className="bg-transparent position-fixed w-100 z-index-10" style={{ backdropFilter: 'blur(1px)', py: '4' }} >
+                <Navbar expand="lg " className="bg-transparent position-absolute w-100 z-index-10 mt-2 mt-sm-2 mt-md-2 mt-lg-5" style={{ backdropFilter: 'blur(1px)', py: '4' }} >
                     <Container fluid>
                         <h1 className='ps-2 text-light'><FaLocationDot className='me-1' />Travela</h1>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav
-                                className="navbar-light me-auto my-2 my-lg-0"
-                                style={{ maxHeight: '100px' }}
+                                className="custom-navbar navbar-light me-auto my-2 my-lg-0"
+                                style={{ maxHeight: '100px',height:'100px' }}
                                 navbarScroll
                             >
-                                <div className='blue py-3 px-3' style={{ marginTop: '-3px' }}>
+                                <div className='blue1 py-3  px-3' style={{ marginTop: '-3px' }}>
                                     <Nav.Link href="/" className='fw-bold py-4 text-light'>Home</Nav.Link>
                                 </div>
                                 <div className='blue1 py-3 px-3' style={{ marginTop: '-3px' }}>
@@ -105,8 +106,8 @@ function Header() {
                                 <div className='blue1 py-3 px-3' style={{ marginTop: '-3px' }}>
                                     <Nav.Link href="/Contact" className='fw-bold py-4 text-light'>Contact</Nav.Link>
                                 </div>
-                                <div className=' py-3 px-3' style={{ marginTop: '-3px' }}>
-                                    <Button variant="" className='fw-bold  py-2 mt-3 rounded rounded-pill text-light me-4' style={{ backgroundColor: '#13357b' }}>Book Now</Button>
+                                <div className='py-sm-4 py-lg-3 ps-md-2 px-3' style={{ marginTop: '-3px' }}>
+                                    <Button variant="" className='fw-bold py-2 mt-3 rounded rounded-pill text-light me-4' style={{ backgroundColor: '#13357b' }}>Book Now</Button>
                                 </div>
                             </Nav>
 

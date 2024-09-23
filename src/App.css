@@ -2,37 +2,85 @@
   background-color: #13357B;
 }
 
+
+.blue1{
+  transition: height 1s;
+  height: 0;
+}
+
 .blue1:hover{
   background-color: #13357B;
+  height: 103px;
 }
+
+
+/* @media (max-width: 1024px) {
+  .custom-navbar {
+      background-color: white !important;
+      width: 100%;
+      height: 500px;
+  }
+  
+  .custom-navbar .nav-link {
+      color: #13357B !important;
+  }
+
+} */
+
 
 .navbar-light{
   position: absolute;
   right: 0%;
 }
 
+.navbar{
+  margin-top: 66px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
 #navbarScrollingDropdown::after {
   border-top-color: #f8f9fa; 
 }
 
-.navbar{
-  position:absolute;
-  z-index: 2;
+html, body {
+  height: 100%;
+  overflow-x: hidden; 
 }
 
-.carousel .carousel-item{
-  height: 900px;
-  margin-top: -70px;
+.blue.container-fluid {
+  position: fixed;
+  z-index: 3; 
 }
 
-.carousel-caption {
-  position: absolute; /* Positioning to allow centering */
-  top: 25%; 
-}
-
-.fontSize{
-  font-size: 65px;
-}
+.carousel .carousel-caption{
+  position: absolute;
+  top: 20%;
+ }
+ .h11{
+   font-weight:bold;
+   font-size: 60px;
+   /* font-family:''Roboto', sans-serif'; */
+ }
+   
+   @media screen and (max-width:1200px){
+     .h11{
+       font-size: 60px;
+     }
+   }
+ 
+ @media (max-width:768px){
+   
+   .cimg{
+    height: 700px;
+   }
+   .h11{
+     font-size: 40px;
+   }
+    
+   
+ }
 
 
 
