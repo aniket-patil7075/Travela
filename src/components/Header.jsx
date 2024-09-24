@@ -34,7 +34,7 @@ function Header() {
 
                     {/* -------------------------------------------------------- */}
 
-                    <FaUser className='py-2 px-2' style={{ width: "35px", height: "35px", marginLeft: "680px" }} />
+                    <FaUser className='my-div py-2 px-2' style={{ width: "35px", height: "35px", marginLeft: "680px" }} />
                     <span className='py-1 me-3'>Register</span>
 
                     <FaArrowRightToBracket className='py-2 px-2' style={{ width: "40px", height: "35px" }} /><span className='py-1 me-3'>Login</span>
@@ -58,10 +58,10 @@ function Header() {
                     </span>
             </div>
             <div className='' >
-                <Navbar expand="lg " className="bg-transparent position-absolute w-100 z-index-10 mt-2 mt-sm-2 mt-md-2 mt-lg-5" style={{ backdropFilter: 'blur(1px)', py: '4' }} >
+                <Navbar expand="lg " className="bg-transparent position-fixed w-100 z-index-10 mt-2 mt-sm-2 mt-md-2 mt-lg-5" style={{ backdropFilter: 'blur(1px)', py: '4' }} >
                     <Container fluid>
                         <h1 className='ps-2 text-light'><FaLocationDot className='me-1' />Travela</h1>
-                        <Navbar.Toggle aria-controls="navbarScroll" />
+                        <Navbar.Toggle className='custom-toggle' aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav
                                 className="custom-navbar navbar-light me-auto my-2 my-lg-0"
@@ -78,13 +78,13 @@ function Header() {
                                     <Nav.Link href="/Services" className='fw-bold py-4 text-light'>Services</Nav.Link>
                                 </div>
                                 <div className='blue1 py-3 px-3' style={{ marginTop: '-3px' }}>
-                                    <Nav.Link href="/Packages" className='fw-bold py-4 text-light'>Packages</Nav.Link>
+                                    <Nav.Link href="/Packages"  className='fw-bold py-4 text-light'>Packages</Nav.Link>
                                 </div>
                                 <div className='blue1 py-3 px-3' style={{ marginTop: '-3px' }}>
                                     <Nav.Link href="/Blog" className='fw-bold py-4 text-light'>Blog</Nav.Link>
                                 </div>
                                 <div className='blue1 py-3 px-3' style={{ marginTop: '-3px' }}>
-                                    <NavDropdown title={<span className="text-light">Pages</span>} className='fw-bold py-3  text-light mb-5' id="navbarScrollingDropdown" >
+                                    <NavDropdown title={<span id='pages' className="">Pages</span>} className='fw-bold py-3  text-light mb-5' id="navbarScrollingDropdown" >
                                         <NavDropdown.Item href="#action3">Destination</NavDropdown.Item>
                                         <NavDropdown.Item href="#action4">
                                             Explore Tour
@@ -107,7 +107,7 @@ function Header() {
                                     <Nav.Link href="/Contact" className='fw-bold py-4 text-light'>Contact</Nav.Link>
                                 </div>
                                 <div className='py-sm-4 py-lg-3 ps-md-2 px-3' style={{ marginTop: '-3px' }}>
-                                    <Button variant="" className='fw-bold py-2 mt-3 rounded rounded-pill text-light me-4' style={{ backgroundColor: '#13357b' }}>Book Now</Button>
+                                    <Button variant="" id='discovernow' className='fw-bold py-2 mt-3 rounded rounded-pill  me-4' >Book Now</Button>
                                 </div>
                             </Nav>
 
