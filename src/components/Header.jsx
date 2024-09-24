@@ -34,7 +34,7 @@ function Header() {
 
                     {/* -------------------------------------------------------- */}
 
-                    <FaUser className='my-div py-2 px-2' style={{ width: "35px", height: "35px", marginLeft: "680px" }} />
+                    <FaUser className='register py-2 px-2' style={{ width: "35px", height: "35px" }} />
                     <span className='py-1 me-3'>Register</span>
 
                     <FaArrowRightToBracket className='py-2 px-2' style={{ width: "40px", height: "35px" }} /><span className='py-1 me-3'>Login</span>
@@ -110,10 +110,6 @@ function Header() {
                                     <Button variant="" id='discovernow' className='fw-bold py-2 mt-3 rounded rounded-pill  me-4' >Book Now</Button>
                                 </div>
                             </Nav>
-
-
-
-
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
