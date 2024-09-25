@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import AboutUs from './AboutUs';
+import OurServices from './OurServices';
 
 function Home() {
   return (
@@ -81,6 +82,7 @@ function Home() {
       </InputGroup>
         </div>
         <AboutUs/>
+        <OurServices/>
     </div>
   )
 }
