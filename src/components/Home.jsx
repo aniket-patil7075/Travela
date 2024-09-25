@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import AboutUs from './AboutUs';
 import OurServices from './OurServices';
+import Destination from './Destination';
 
 function Home() {
   return (
@@ -83,6 +84,7 @@ function Home() {
         </div>
         <AboutUs/>
         <OurServices/>
+        <Destination/>
     </div>
   )
 }

@@ -40,7 +40,7 @@ function AboutUs() {
                   <div className='mb-2 text-secondary'><FaArrowRight className='colorBlue me-3'/>24/7 Service</div>
                 </Col>
               </Row>
-              <Button variant="outline-primary" id='discovernow' className='rounded-pill fw-bold py-3 px-5 mt-3' >Read More</Button> 
+              <Button variant="outline-primary" id='discovernow' className='servBtn rounded-pill fw-bold py-3 px-5 mt-3' >Read More</Button> 
 
             </div>
           </Col>
