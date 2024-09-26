@@ -350,6 +350,11 @@ body {
   left: 27%;
 }
 
+.packCard{
+  width: 30%;
+  /* height: 500px; */
+}
+
 @media (max-width:425px) {
 
   html,
