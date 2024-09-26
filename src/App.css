@@ -288,6 +288,18 @@ body {
 .services-div:hover .colorGray{
   color: white;
 }
+.destiBtn{
+  width: 150px;
+  border: 1px solid #13357B !important;
+  color: #13357B !important ;
+}
+.active-btn{
+  /* width: 150px; */
+  /* color: white !important ; */
+  border: 1px solid #13357B !important;
+  background-color: #13357b !important;
+  color: white !important;
+}
 
 @media (max-width:425px) {
 

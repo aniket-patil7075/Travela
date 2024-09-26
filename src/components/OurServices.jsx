@@ -12,7 +12,7 @@ function OurServices() {
   return (
     <div className='py-5 bg-body-secondary' style={{ marginTop: '80px' }}>
       <Container>
-        <h5 className='colorBlue pt-5 pb-2 text-center'>----- SERVICES -----</h5>
+        <h4 className='colorBlue pt-5 pb-2 text-center'>----- SERVICES -----</h4>
         <h1 className='text-center'>Our Services</h1>
         <Row className='py-5'>
           <Col lg="6">

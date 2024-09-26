@@ -6,6 +6,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import AboutUs from './AboutUs';
 import OurServices from './OurServices';
 import Destination from './Destination';
+import Blog from './Blog';
 
 function Home() {
   return (
@@ -85,6 +86,7 @@ function Home() {
         <AboutUs/>
         <OurServices/>
         <Destination/>
+        <Blog/>
     </div>
   )
 }
