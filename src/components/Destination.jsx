@@ -15,10 +15,10 @@ function Destination() {
             <Container>
                 <h4 className='colorBlue pt-5 pb-2 text-center'>----- DESTINATION -----</h4>
                 <h1 className='text-center'>Popular Destination</h1>
-                <div className='d-flex justify-content-between py-5'>
+                <div className='d-flex justify-content-center py-5 d-inline-flex flex-wrap'>
                     <Button
                         variant=""
-                        className={`destiBtn rounded-pill py-2 ${activeButton === 'All' ? 'active-btn' : ''}`}
+                        className={`destiBtn rounded-pill py-2 m-3 ${activeButton === 'All' ? 'active-btn' : ''}`}
                         onClick={() => handleButtonClick('All')}
                     >
                         All
@@ -26,7 +26,7 @@ function Destination() {
 
                     <Button
                         variant=""
-                        className={`destiBtn rounded-pill py-2 ${activeButton === 'USA' ? 'active-btn' : ''}`}
+                        className={`destiBtn rounded-pill py-2 m-3 ${activeButton === 'USA' ? 'active-btn' : ''}`}
                         onClick={() => handleButtonClick('USA')}
                     >
                         USA
@@ -34,7 +34,7 @@ function Destination() {
 
                     <Button
                         variant=""
-                        className={`destiBtn rounded-pill py-2 ${activeButton === 'Canada' ? 'active-btn' : ''}`}
+                        className={`destiBtn rounded-pill py-2 m-3 ${activeButton === 'Canada' ? 'active-btn' : ''}`}
                         onClick={() => handleButtonClick('Canada')}
                     >
                         Canada
@@ -42,7 +42,7 @@ function Destination() {
 
                     <Button
                         variant=""
-                        className={`destiBtn rounded-pill py-2 ${activeButton === 'Europe' ? 'active-btn' : ''}`}
+                        className={`destiBtn rounded-pill py-2 m-3 ${activeButton === 'Europe' ? 'active-btn' : ''}`}
                         onClick={() => handleButtonClick('Europe')}
                     >
                         Europe
@@ -50,7 +50,7 @@ function Destination() {
 
                     <Button
                         variant=""
-                        className={`destiBtn rounded-pill py-2 ${activeButton === 'China' ? 'active-btn' : ''}`}
+                        className={`destiBtn rounded-pill py-2 m-3 ${activeButton === 'China' ? 'active-btn' : ''}`}
                         onClick={() => handleButtonClick('China')}
                     >
                         China
@@ -58,87 +58,46 @@ function Destination() {
 
                     <Button
                         variant=""
-                        className={`destiBtn rounded-pill py-2 ${activeButton === 'Singapore' ? 'active-btn' : ''}`}
+                        className={`destiBtn rounded-pill py-2 m-3 ${activeButton === 'Singapore' ? 'active-btn' : ''}`}
                         onClick={() => handleButtonClick('Singapore')}
                     >
                         Singapore
                     </Button>
                 </div>
-                <Row className=''>
-                    <Col lg="4">
-                        <Row>
-
-                            <div className=''>
-                                <img
-                                    className="p-2 rounded rounded-4 w-100"
-                                    src="/destination-1.jpg"
-                                    alt="AboutUs"
-                                />
-                            </div>
-
-                            <div className='mt-2'>
-                                <img
-                                    className="p-2 rounded rounded-4 w-100"
-                                    src="/destination-2.jpg"
-                                    alt="AboutUs"
-                                />
-                            </div>
-
-                        </Row>
-                        <div className='mt-2'>
-                            <img
-                                className="p-2 rounded rounded-4 w-100"
-                                src="/destination-4.jpg"
-                                alt="AboutUs"
-                            />
-                        </div>
-                    </Col>
-                    <Col lg="4">
-                        <Row>
-
-                            <div className=''>
-                                <img
-                                    className="p-2 rounded rounded-4 w-100"
-                                    src="/destination-7.jpg"
-                                    alt="AboutUs"
-                                />
-                            </div>
-
-                            <div className='mt-2'>
-                                <img
-                                    className="p-2 rounded rounded-4 w-100"
-                                    src="/destination-8.jpg"
-                                    alt="AboutUs"
-                                />
-                            </div>
-
-                        </Row>
-                        <div className='mt-2'>
-                            <img
-                                className="p-2 rounded rounded-4 w-100"
-                                src="/destination-5.jpg"
-                                alt="AboutUs"
-                            />
-                        </div>
-
-                    </Col>
-                    <Col lg="4">
-                        <div className=''>
-                            <img
-                                className="mt-2 rounded rounded-3 w-100"
-                                src="/destination-9.jpg"
-                                alt="AboutUs"
-                            />
-                        </div>
-                        <div className='mt-3'>
-                            <img
-                                className="p-1 rounded rounded-4 w-100"
-                                src="/destination-6.jpg"
-                                alt="AboutUs"
-                            />
-                        </div>
-                    </Col>
-                </Row>
+                <Row>
+              <Col lg="4">
+                
+                    <div className='mt-2 div-popimg'>
+                        <img  src="/destination-1.jpg" className='w-100' />
+                    </div>
+                    <div className='mt-4 div-popimg'>
+                        <img  src="/destination-7.jpg"  className="w-100"/>
+                    </div>
+                    <div className='mt-4 div-popimg'>
+                        <img  src="/destination-4.jpg"  className="w-100"/>
+                    </div>
+                  
+              </Col>
+              <Col lg="4">
+              <div className='mt-2 div-popimg'>
+                        <img  src="/destination-2.jpg"  className="w-100"/>
+                    </div>
+                    <div className='mt-4 div-popimg'>
+                        <img  src="/destination-8.jpg"  className="w-100"/>
+                    </div>
+                    <div className='mt-4 div-popimg'>
+                        <img  src="/destination-5.jpg"  className="w-100"/>
+                    </div>
+              </Col>
+              <Col lg="4">
+                    <div className='mt-2 div-popimg'>
+                        <img  src="/destination-9.jpg"  className="w-100 dest-img"/>
+                    </div>
+                    <div className='mt-4 div-popimg'>
+                        <img  src="/destination-6.jpg"  className="w-100"/>
+                    </div>
+              </Col>
+            </Row>
             </Container>
         </div>
     )

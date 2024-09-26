@@ -28,7 +28,7 @@
 
 .navbar.scrolled {
   background-color: white !important;
-  color: #13357B;
+  color: #13357B !important;
 }
 
 .navbar.scrolled .nav-link, 
@@ -300,6 +300,22 @@ body {
   background-color: #13357b !important;
   color: white !important;
 }
+.dest-img{
+  height: 523px !important;
+}
+.div-popimg{
+  overflow: hidden;
+  border-radius: 12px;
+}
+.div-popimg img{
+  object-fit: cover;
+  transition: transform 0.8s;
+  height: 100%;
+}
+
+.div-popimg:hover img{
+  transform: scale(1.5);
+}
 
 @media (max-width:425px) {
 
@@ -487,6 +503,9 @@ body {
   .serviceIcon{
     margin-top: 70px ;
   }
+  .dest-img{
+    height: 438px !important;
+  }
 }
 
 @media (min-width:1440px) {
@@ -494,7 +513,7 @@ body {
     margin-left: 780px;
   }
   .search {
-    bottom: 21%;
+    bottom: 13%;
   }
   .para::after{
     position: absolute;
@@ -521,5 +540,8 @@ body {
   }
   .serviceIcon{
     margin-top: 40px ;
+  }
+  .dest-img{
+    height: 605px !important;
   }
 }
