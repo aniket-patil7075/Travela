@@ -69,32 +69,40 @@ function Destination() {
                 
                     <div className='mt-2 div-popimg'>
                         <img  src="/destination-1.jpg" className='w-100' />
+                        <div className='opaci'></div>
                     </div>
                     <div className='mt-4 div-popimg'>
                         <img  src="/destination-7.jpg"  className="w-100"/>
+                        <div className='opaci'></div>
                     </div>
                     <div className='mt-4 div-popimg'>
                         <img  src="/destination-4.jpg"  className="w-100"/>
+                        <div className='opaci'></div>
                     </div>
                   
               </Col>
               <Col lg="4">
               <div className='mt-2 div-popimg'>
                         <img  src="/destination-2.jpg"  className="w-100"/>
+                        <div className='opaci'></div>
                     </div>
                     <div className='mt-4 div-popimg'>
                         <img  src="/destination-8.jpg"  className="w-100"/>
+                        <div className='opaci'></div>
                     </div>
                     <div className='mt-4 div-popimg'>
                         <img  src="/destination-5.jpg"  className="w-100"/>
+                        <div className='opaci'></div>
                     </div>
               </Col>
               <Col lg="4">
                     <div className='mt-2 div-popimg'>
                         <img  src="/destination-9.jpg"  className="w-100 dest-img"/>
+                        <div className='opaci'></div>
                     </div>
                     <div className='mt-4 div-popimg'>
                         <img  src="/destination-6.jpg"  className="w-100"/>
+                        <div className='opaci'></div>
                     </div>
               </Col>
             </Row>
