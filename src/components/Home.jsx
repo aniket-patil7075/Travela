@@ -8,6 +8,7 @@ import OurServices from './OurServices';
 import Destination from './Destination';
 import Blog from './Blog';
 import TheWorld from './TheWorld';
+import AwesomePack from './AwesomePack';
 
 function Home() {
   return (
@@ -88,6 +89,7 @@ function Home() {
         <OurServices/>
         <Destination/>
         <TheWorld/>
+        <AwesomePack/>
         <Blog/>
     </div>
   )

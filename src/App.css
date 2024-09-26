@@ -343,6 +343,13 @@ body {
   opacity: 0.4; 
 }
 
+.explore{
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 27%;
+}
+
 @media (max-width:425px) {
 
   html,
@@ -408,6 +415,10 @@ body {
   }
   .serviceIcon{
     margin-top: 90px ;
+  }
+  .explore{
+    top: 60%;
+    left: 30%;
   }
 }
 
@@ -483,6 +494,10 @@ body {
   }
   .serviceIcon{
     margin-top: 30px ;
+  }
+  .explore{
+    top: 60%;
+    left: 26%;
   }
 }
 
