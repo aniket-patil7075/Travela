@@ -342,6 +342,31 @@ body {
 .div-popimg:hover .opaci {
   opacity: 0.4; 
 }
+.card-img {
+  position: relative;
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
+  overflow: hidden; /* Ensure child elements don't overflow */
+}
+
+.opaci1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0; /* Start with a width of 0 */
+  height: 0; /* Start with a height of 0 */
+  background-color: #13357b;
+  opacity: 0;
+  transform: translate(-50%, -50%); /* Center the element */
+  transition: all 0.5s ease; /* Smooth transition for width, height, and opacity */
+  border-radius: 0; /* No border radius for a rectangle */
+}
+
+.card-img:hover .opaci1 {
+  width: 100%; /* Expand to full width */
+  height: 100%; /* Expand to full height */
+  opacity: 0.4; /* Set the desired opacity */
+}
 
 .explore{
   color: white;
@@ -350,10 +375,25 @@ body {
   left: 27%;
 }
 
-.packCard{
-  width: 30%;
-  /* height: 500px; */
+.explore1{
+  color: black;
+  position: absolute;
+  top: 88%;
+  left: 7%;
 }
+
+.packCard{
+  flex: 0 0 340px;
+  /* padding: 10px; */
+  height: 200px;
+}
+
+.card-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* Add the transition here */
+}
+
 
 @media (max-width:425px) {
 
