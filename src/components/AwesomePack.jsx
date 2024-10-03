@@ -11,7 +11,7 @@ function AwesomePack() {
 
   const cards = [
     {
-      place:"Venice-Italy",
+      place:"Thayland",
       days:"3 Days",
       person:"2 Person",
       src: "/packages-1.jpg",
@@ -23,6 +23,9 @@ function AwesomePack() {
       updated2: "Book Now",
     },
     {
+      place:"Venice-Italy",
+      days:"3 Days",
+      person:"2 Person",
       src: "/packages-2.jpg",
       title: "Venice - Italy",
       text1: "HOTEL DEALS",
@@ -32,6 +35,9 @@ function AwesomePack() {
       updated2: "Book Now",
     },
     {
+      place:"California",
+      days:"2 Days",
+      person:"4 Person",
       src: "packages-3.jpg",
       title: "The New California",
       text1: "HOTEL DEALS",
@@ -41,6 +47,9 @@ function AwesomePack() {
       updated2: "Book Now",
     },
     {
+      place:"Japan",
+      days:"3 Days",
+      person:"2 Person",
       src: "packages-4.jpg",
       title: "Discover Japan",
       text1: "HOTEL DEALS",
@@ -96,10 +105,10 @@ function AwesomePack() {
               <Card className="packCard mx-3 " key={index} >
                 <div className=' card-img'>
                   <Card.Img variant="top" className='' src={card.src} />
-                  <div className='explore1 d-flex'>
-                    <p className='px-3'>{card.place} </p>
-                    <p className='px-3'>{card.days} </p>
-                    <p className='px-3'>{card.person} </p>
+                  <div className='explore1 d-flex bg-secondary bg-opacity-50'>
+                    <p className='px-3 text-light py-1 '>{card.place} </p>
+                    <p className='days px-3 text-light py-1 '>{card.days} </p>
+                    <p className='px-3 text-light py-1 '>{card.person} </p>
                   </div>
                   <div className='opaci1'></div>
                 </div>

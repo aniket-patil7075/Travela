@@ -271,7 +271,7 @@ body {
 }
 
 .register {
-  margin-left: 720px;
+  margin-left: 70px;
 }
 
 .serviceIcon{
@@ -376,10 +376,17 @@ body {
 }
 
 .explore1{
-  color: black;
+  /* background-color: ; */
+  width: 100%;
   position: absolute;
   top: 88%;
-  left: 7%;
+  padding-left: 25px;
+  border: 1px solid white;
+}
+
+.days{
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 }
 
 .packCard{
