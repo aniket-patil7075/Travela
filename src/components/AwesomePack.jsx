@@ -11,9 +11,9 @@ function AwesomePack() {
 
   const cards = [
     {
-      place:"Thailand",
-      days:"3 Days",
-      person:"2 Person",
+      place: "Thailand",
+      days: "3 Days",
+      person: "2 Person",
       src: "/packages-1.jpg",
       title: "Thailand Trip",
       text1: "HOTEL DEALS",
@@ -23,9 +23,9 @@ function AwesomePack() {
       updated2: "Book Now",
     },
     {
-      place:"Venice-Italy",
-      days:"3 Days",
-      person:"2 Person",
+      place: "Venice-Italy",
+      days: "3 Days",
+      person: "2 Person",
       src: "/packages-2.jpg",
       title: "Venice - Italy",
       text1: "HOTEL DEALS",
@@ -35,9 +35,9 @@ function AwesomePack() {
       updated2: "Book Now",
     },
     {
-      place:"California",
-      days:"2 Days",
-      person:"4 Person",
+      place: "California",
+      days: "2 Days",
+      person: "4 Person",
       src: "packages-3.jpg",
       title: "The New California",
       text1: "HOTEL DEALS",
@@ -47,9 +47,9 @@ function AwesomePack() {
       updated2: "Book Now",
     },
     {
-      place:"Japan",
-      days:"3 Days",
-      person:"2 Person",
+      place: "Japan",
+      days: "3 Days",
+      person: "2 Person",
       src: "packages-4.jpg",
       title: "Discover Japan",
       text1: "HOTEL DEALS",
