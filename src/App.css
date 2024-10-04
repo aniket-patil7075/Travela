@@ -450,6 +450,12 @@ body {
   top: 10px;
 }
 
+.footerA a{
+  text-decoration: none;
+  color: #f8f9fa;
+  font-weight: 500;
+}
+
 @media (max-width:425px) {
 
   html,
