@@ -11,7 +11,7 @@ function AwesomePack() {
 
   const cards = [
     {
-      place:"Thayland",
+      place:"Thailand",
       days:"3 Days",
       person:"2 Person",
       src: "/packages-1.jpg",
@@ -113,7 +113,7 @@ function AwesomePack() {
                   <div className='opaci1'></div>
                 </div>
 
-                <Card.Body>
+                <Card.Body className='bg-success bg-opacity-10'>
                   <Card.Title className='my-0'>{card.title}</Card.Title>
                   <Card.Text className='my-0'>{card.text1}</Card.Text>
                   <Card.Text className='colorBlue'>{card.text2}</Card.Text>

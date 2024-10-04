@@ -9,6 +9,7 @@ import Destination from './Destination';
 import Blog from './Blog';
 import TheWorld from './TheWorld';
 import AwesomePack from './AwesomePack';
+import OnlineBooking from './OnlineBooking';
 
 function Home() {
   return (
@@ -90,6 +91,7 @@ function Home() {
         <Destination/>
         <TheWorld/>
         <AwesomePack/>
+        <OnlineBooking/>
         <Blog/>
     </div>
   )

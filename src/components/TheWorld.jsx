@@ -20,7 +20,7 @@ function TheWorld() {
                 <div className='d-flex justify-content-center py-5'>
                     <Button
                         variant=""
-                        className={`destiBtn rounded-pill py-3 mx-4 w-25 ${activeButton === 'National' ? 'active-btn' : ''}`}
+                        className={`destiBtn rounded-pill py-3 px-3 mx-4 w-25 ${activeButton === 'National' ? 'active-btn' : ''}`}
                         onClick={() => handleButtonClick('National')}
                     >
                         National Tour Category
@@ -28,10 +28,10 @@ function TheWorld() {
 
                     <Button
                         variant=""
-                        className={`destiBtn rounded-pill py-3 mx-4 w-25 ${activeButton === 'International' ? 'active-btn' : ''}`}
+                        className={`destiBtn rounded-pill py-3 mx- w-25 ${activeButton === 'International' ? 'active-btn' : ''}`}
                         onClick={() => handleButtonClick('International')}
                     >
-                        International Tour Category
+                        Inter national Tour Category
                     </Button>
                 </div>
 
