@@ -416,7 +416,17 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('/tour-booking-bg.jpg'); /* Update the path to your image */
+  background-image: url('/tour-booking-bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.div-footerImg{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('/carousel-2.jpg'); 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -434,6 +444,11 @@ body {
   align-items: center;
 }
 
+.footerBtn{
+  background-color: #13357B;
+  right: 25px;
+  top: 10px;
+}
 
 @media (max-width:425px) {
 

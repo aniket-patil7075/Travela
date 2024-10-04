@@ -9,6 +9,7 @@ import Packages from './components/Packages';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Booknow from './components/Booknow';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='/Booknow' element={<Booknow/>}/>
       </Routes>
+      <Footer/>
      </BrowserRouter>
       
     </>
