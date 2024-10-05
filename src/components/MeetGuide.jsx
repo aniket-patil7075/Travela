@@ -43,30 +43,30 @@ function MeetGuide() {
               <Card className="" key={index}>
                 <div className="guideImg">
                   <Card.Img variant="top" className="" src={guide.src} />
-                  <div>
+                  <div className="div-GuideSocial rounded rounded-pill w-75 text-center">
                     <FaTwitter
-                      className="border border-1 rounded rounded-circle p-2 me-2"
+                      className="GuideSocial border border-1 rounded rounded-circle p-2 me-2"
                       style={{ width: "35px", height: "35px" }}
                     />
 
                     <FaFacebookF
-                      className="border border-1 rounded rounded-circle p-2 me-2"
+                      className="GuideSocial border border-1 rounded rounded-circle p-2 me-2"
                       style={{ width: "35px", height: "35px" }}
                     />
 
                     <FaLinkedinIn
-                      className="border border-1 rounded rounded-circle p-2 me-2"
+                      className="GuideSocial border border-1 rounded rounded-circle p-2 me-2"
                       style={{ width: "35px", height: "35px" }}
                     />
 
                     <FaInstagram
-                      className="border border-1 rounded rounded-circle p-2 me-2"
+                      className="GuideSocial border border-1 rounded rounded-circle p-2 me-2"
                       style={{ width: "35px", height: "35px" }}
                     />
                   </div>
                 </div>
 
-                <Card.Body className="guideBody">
+                <Card.Body className="guideBody mt-4">
                   <Card.Title className="guideText">{guide.name}</Card.Title>
                   <Card.Text className="guideText">
                     {guide.designation}
