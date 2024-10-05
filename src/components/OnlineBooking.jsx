@@ -14,7 +14,7 @@ function OnlineBooking() {
           <Container>
             <Row>
               <Col lg={6}>
-                <h4 className="text-light">BOOKING -----</h4>
+                <h4 className="text-light mt-5">BOOKING -----</h4>
                 <h1 className="text-light">Online Booking</h1>
                 <p className="text-light mt-5">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.

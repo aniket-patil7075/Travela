@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/esm/Container';
 import Button from 'react-bootstrap/Button';
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
 import Card from 'react-bootstrap/Card';
-import { FaStar } from "react-icons/fa";
 
 function AwesomePack() {
   const [activeButton, setActiveButton] = useState('');
   const [visibleIndex, setVisibleIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(true);
 
   const cards = [
     {
@@ -38,7 +38,7 @@ function AwesomePack() {
       place: "California",
       days: "2 Days",
       person: "4 Person",
-      src: "packages-3.jpg",
+      src: "/packages-3.jpg",
       title: "The New California",
       text1: "HOTEL DEALS",
       text2: <><FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar /></>,
@@ -50,7 +50,7 @@ function AwesomePack() {
       place: "Japan",
       days: "3 Days",
       person: "2 Person",
-      src: "packages-4.jpg",
+      src: "/packages-4.jpg",
       title: "Discover Japan",
       text1: "HOTEL DEALS",
       text2: <><FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar /></>,
@@ -60,14 +60,43 @@ function AwesomePack() {
     }
   ];
 
+  // Clone the first 3 cards to make the infinite loop effect
+  const extendedCards = [...cards, ...cards.slice(0, 3)];
+
   const handleButtonClick = (direction) => {
-    if (direction === 'LeftArrow' && visibleIndex > 0) {
-      setVisibleIndex(visibleIndex - 1);
-    } else if (direction === 'RightArrow' && visibleIndex < cards.length - 3) {
-      setVisibleIndex(visibleIndex + 1);
+    if (isTransitioning) {
+      if (direction === 'LeftArrow') {
+        setVisibleIndex(prevIndex => (prevIndex > 0 ? prevIndex - 1 : cards.length - 1));
+      } else if (direction === 'RightArrow') {
+        setVisibleIndex(prevIndex => prevIndex + 1);
+      }
     }
     setActiveButton(direction);
   };
+
+  // Automatically move the carousel after every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVisibleIndex(prevIndex => prevIndex + 1);
+    }, 3000); // Change the duration as per your requirement (in milliseconds)
+
+    return () => clearInterval(interval); // Cleanup on component unmount
+  }, []);
+
+  // Check when to reset the position to create an infinite loop effect
+  useEffect(() => {
+    if (visibleIndex === extendedCards.length - 3) {
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setVisibleIndex(0); // Reset to the first set of cards
+      }, 500); // Time it to match the CSS transition duration
+
+      // Restore the transition effect after resetting
+      setTimeout(() => {
+        setIsTransitioning(true);
+      }, 600);
+    }
+  }, [visibleIndex, extendedCards.length]);
 
   return (
     <div className='' style={{ marginTop: '120px' }}>
@@ -97,11 +126,11 @@ function AwesomePack() {
             className="card-container"
             style={{
               display: 'flex',
-              transition: 'transform 0.5s ease-in-out',
+              transition: isTransitioning ? 'transform 0.5s ease-in-out' : 'none',
               transform: `translateX(-${visibleIndex * (100 / 3)}%)`,
             }}
           >
-            {cards.map((card, index) => (
+            {extendedCards.map((card, index) => (
               <Card className="packCard mx-3 " key={index} >
                 <div className=' card-img'>
                   <Card.Img variant="top" className='' src={card.src} />

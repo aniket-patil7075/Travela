@@ -14,6 +14,10 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { MdArrowForwardIos } from "react-icons/md";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { FaCcVisa } from "react-icons/fa";
+import { FaCcMastercard } from "react-icons/fa";
+import { FaCcPaypal } from "react-icons/fa";
+import { FaCcDiscover } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -24,13 +28,13 @@ function Footer() {
             <div className="text-center text-light">
               <h4>----- SUBSCRIBE -----</h4>
               <h1>Our Newsletter</h1>
-              <p className="w-75 mt-5" style={{ marginLeft: "170px" }}>
+              <p className="footerPara w-75 mt-5" >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
                 tempore nam, architecto doloremque velit explicabo? Voluptate
                 sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti
                 eum cum repellat a laborum quasi.
               </p>
-              <p className="w-75 mt-5" style={{ marginLeft: "170px" }}>
+              <p className="footerPara w-75 mt-5" >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
                 tempore nam, architecto doloremque velit explicabo? Voluptate
                 sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti
@@ -55,10 +59,10 @@ function Footer() {
           </Container>
         </div>
       </div>
-      <div className="py-5 bg-dark text-light">
+      <div className="py-4 bg-dark text-light">
         <Container>
           <Row>
-            <Col>
+            <Col md={6} lg={3} className="footerA  py-3">
               <h4>Get In Touch</h4>
               <p className="mt-4">
                 <FaHome className="me-2" />
@@ -103,9 +107,9 @@ function Footer() {
                 />
               </div>
             </Col>
-            <Col className="footerA">
+            <Col className="footerA py-3" md={6} lg={3}>
               <h4 className="mb-3">Company</h4>
-              <a href="/">
+              <a href="/" className="">
                 <MdArrowForwardIos className="me-3" />
                 About
               </a><br/>
@@ -130,7 +134,7 @@ function Footer() {
                 Magazine
               </a><br/>
             </Col>
-            <Col className="footerA">
+            <Col className="footerA py-3" md={6} lg={3}>
               <h4 className="mb-3">Support</h4>
               <a href="/">
                 <MdArrowForwardIos className="me-3" />
@@ -157,8 +161,9 @@ function Footer() {
                 Cookie policy
               </a><br/>
             </Col>
-            <Col>
+            <Col md={6} lg={3} className="footerA py-3">
                 <div className="">
+                  
                 <Form.Group as={Col} controlId="formGridDate">
                       <NavDropdown
                         id="nav-dropdown-light-example"
@@ -199,14 +204,16 @@ function Footer() {
                         </NavDropdown.Item>
                       </NavDropdown>
                     </Form.Group>
+                    <h4 className="my-3">Payments</h4>
+                    <div><FaCcVisa className="fs-5 me-2" /> <FaCcMastercard className="fs-5 me-2"  /> <FaCcPaypal className="fs-5 me-2"  /> <FaCcDiscover className="fs-5 me-2"  /></div>
                 </div>
             </Col>
           </Row>
         </Container>
         <hr className="my-5"></hr>
-        <div className="mx-auto d-block">
+        <div className="text-center">
             <Container>
-            <p className="text-light fw-bold">&Travela <span className="text-secondary"> , All right reserved. Designed By</span>  Aniket Patil</p>
+            <p className="text-light fw-bold">&Travela <span className="text-secondary"> , All right reserved. Designed By</span>  @Aniket Patil</p>
             </Container>
         </div>
       </div>

@@ -10,6 +10,8 @@ import Blog from './Blog';
 import TheWorld from './TheWorld';
 import AwesomePack from './AwesomePack';
 import OnlineBooking from './OnlineBooking';
+import PopularBlog from './PopularBlog';
+import MeetGuide from './MeetGuide';
 
 function Home() {
   return (
@@ -92,7 +94,8 @@ function Home() {
         <TheWorld/>
         <AwesomePack/>
         <OnlineBooking/>
-        <Blog/>
+        <MeetGuide/>
+        <PopularBlog/>
     </div>
   )
 }
