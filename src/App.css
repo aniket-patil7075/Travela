@@ -182,7 +182,7 @@ body {
 
 .search {
   z-index: 50;
-  bottom: -32%;
+  bottom: -27%;
   /* top: 100%; */
   left: 12%;
   background-color: #13367bc9;
@@ -547,7 +547,7 @@ body {
   }
   
   .cimg {
-    height: 670px;
+    height: 770px;
   }
 
   .h11 {
@@ -672,7 +672,7 @@ body {
   }
 
   .search {
-    bottom: -38%;
+    bottom: -20%;
   }
   .para{
     height: 500px;
@@ -730,6 +730,7 @@ body {
   .footerPara{
     margin-left: 85px !important;
   }
+ 
 }
 
 @media (min-width:769px) and (max-width:1024px) {
@@ -743,7 +744,7 @@ body {
   }
 
   .search {
-    bottom: 13%;
+    bottom: 25%;
   }
 
   .para{
@@ -792,9 +793,8 @@ body {
   .register {
     margin-left: 780px;
   }
-  .search {
-    bottom: 13%;
-  }
+ 
+  
   .para::after{
     position: absolute;
     content: '';
