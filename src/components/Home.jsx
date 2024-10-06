@@ -12,6 +12,7 @@ import AwesomePack from "./AwesomePack";
 import OnlineBooking from "./OnlineBooking";
 import PopularBlog from "./PopularBlog";
 import MeetGuide from "./MeetGuide";
+import Tourism from "./Tourism";
 
 function Home() {
   return (
@@ -117,6 +118,7 @@ function Home() {
       <Destination />
       <TheWorld />
       <AwesomePack />
+      <Tourism/>
       <OnlineBooking />
       {/* <MeetGuide /> */}
       <PopularBlog />

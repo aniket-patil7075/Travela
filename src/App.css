@@ -10,6 +10,11 @@
   color: gray;
 }
 
+.header-icon:hover{
+  color: #13357B;
+  background-color: white;
+}
+
 .navbar-light {
   position: absolute;
   right: 0%;
@@ -21,6 +26,9 @@
   /* top: 0; */
   z-index: 1000;
 }
+.border-bottom-custom {
+  border-bottom: 0.5px solid rgb(163, 163, 163); /* Adjust thickness if needed */
+}
 
 #navbarScrollingDropdown::after {
   border-top-color: #f8f9fa;
@@ -29,6 +37,7 @@
 .navbar.scrolled {
   background-color: white !important;
   color: #13357B !important;
+  border-bottom: hidden;
 }
 
 .navbar.scrolled .nav-link, 
@@ -344,9 +353,9 @@ body {
 }
 .card-img {
   position: relative;
-  width: 100%; /* Adjust as needed */
-  height: 100%; /* Adjust as needed */
-  overflow: hidden; /* Ensure child elements don't overflow */
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden; 
 }
 
 .card-img img{
@@ -364,12 +373,12 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 0; /* Start with a width of 0 */
-  height: 0; /* Start with a height of 0 */
+  width: 0; 
+  height: 0; 
   background-color: #13357b;
   opacity: 0;
-  transform: translate(-50%, -50%); /* Center the element */
-  transition: all 0.5s ease; /* Smooth transition for width, height, and opacity */
+  transform: translate(-50%, -50%); 
+  transition: all 0.5s ease; 
   border-radius: 0; /* No border radius for a rectangle */
 }
 
@@ -379,6 +388,12 @@ body {
   opacity: 0.4; /* Set the desired opacity */
 }
 
+.packCard{
+  flex: 0 0 400px;
+  /* padding: 10px; */
+  height: 200px;
+}
+
 .explore{
   color: white;
   position: absolute;
@@ -386,25 +401,12 @@ body {
   left: 27%;
 }
 
-.explore1{
-  /* background-color: ; */
-  width: 100%;
-  position: absolute;
-  top: 88%;
-  padding-left: 25px;
-  border: 1px solid white;
-}
 
 .days{
   border-left: 1px solid white;
   border-right: 1px solid white;
 }
 
-.packCard{
-  flex: 0 0 400px;
-  /* padding: 10px; */
-  height: 200px;
-}
 
 .card-container {
   display: flex;
@@ -422,16 +424,6 @@ body {
   background-attachment: fixed;
 }
 
-.div-footerImg{
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-image: url('/carousel-2.jpg'); 
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -442,6 +434,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.div-footerImg{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('/carousel-2.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .footerBtn{
@@ -456,8 +459,83 @@ body {
   font-weight: 500;
   /* padding-top: 5px !important; */
 }
+
 .BlogCardFooter{
   height: 100px;
+}
+
+.explore1{
+  /* background-color: ; */
+  width: 100%;
+  position: absolute;
+  top: 88%;
+  padding-left: 25px;
+  border: 1px solid white;
+}
+
+.touri-img{
+  border-radius: 16px;
+  width: 100%;      /* Ensure image takes the full width of its container */
+  height: auto;     /* Maintain aspect ratio */
+  object-fit: cover;
+  object-fit: cover;
+  transition: transform 0.8s;
+ 
+}
+.div-touriimg{
+  overflow: hidden;
+  border-radius: 16px;
+  margin-bottom: 7px;  
+
+  background-color: #13357B;
+  position: relative;
+}
+.div-touriimg:hover img{
+  transform: scale(1.5);
+ 
+}
+.div-touriimg .opaci {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #13357b;;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth transition */
+}
+.div-touriimg:hover .opaci {
+  opacity: 0.8; /* Show the overlay on hover */
+}
+.div-touriimg .info {
+  height: 200px;
+  width: 100%;
+  top: 100%; /* Start from the bottom (just below the container) */
+  color: #f8f9fa;
+ 
+  box-sizing: border-box;
+  position: absolute;
+  transform: translateY(100%); /* Initial position - hidden */
+  transition: transform 0.5s ease, top 0.5s ease; /* Smooth transition */
+}
+
+.div-touriimg:hover .info {
+  top: 75%; /* Move to the top */
+  transform: translateY(0); /* Animate into view */
+  transform: scale(1.1); /* Optional: Add scale effect */
+}
+.touri-plus{
+  font-size: 35px;
+  color:white;
+ display: none;
+  top:40%;
+  left: 42%;
+  position: absolute;
+ 
+}
+.div-touriimg:hover .touri-plus{
+  display: block;
 }
 
 .guideCard {

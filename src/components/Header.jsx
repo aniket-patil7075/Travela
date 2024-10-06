@@ -39,16 +39,16 @@ function Header() {
         <div>
             <div className='blue container-fluid px-4 py-2 d-none d-lg-block'>
                 <span className='d-flex text-light'>
-                    <div className='ps-4'>
-                        <FaTwitter className='border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
+                    <div className='ps-4 icon'>
+                        <FaTwitter className='header-icon border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
 
-                        <FaFacebookF className='border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
+                        <FaFacebookF className='header-icon border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
 
-                        <FaLinkedinIn className='border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
+                        <FaLinkedinIn className='header-icon border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
 
-                        <FaInstagram className='border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
+                        <FaInstagram className='header-icon border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
 
-                        <FaYoutube className='border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
+                        <FaYoutube className='header-icon border border-1 rounded rounded-circle p-2 me-2' style={{ width: "35px", height: "35px" }} />
                     </div>
 
                     {/* -------------------------------------------------------- */}
@@ -77,13 +77,13 @@ function Header() {
                     </span>
             </div>
             <div className='' >
-                <Navbar expand="lg " className="bg-transparent position-fixed w-100 z-index-10 mt-2 mt-sm-2 mt-md-2 mt-lg-5" style={{ backdropFilter: 'blur(1px)', py: '4' }} >
+                <Navbar expand="lg " className="border-bottom-custom bg-transparent position-fixed w-100 z-index-10 mt-2 mt-sm-2 mt-md-2 mt-lg-5" style={{ backdropFilter: 'blur(1px)', py: '4' }} >
                     <Container fluid>
                         <h1 className='travela ps-2 text-light'><FaLocationDot className='me-1' />Travela</h1>
                         <Navbar.Toggle className='custom-toggle' aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav
-                                className="custom-navbar navbar-light me-auto my-2 my-lg-0"
+                                className="custom-navbar  navbar-light me-auto my-2 my-lg-0"
                                 style={{ maxHeight: '100px',height:'100px' }}
                                 navbarScroll
                             >
