@@ -120,7 +120,7 @@ function Home() {
       <AwesomePack />
       <Tourism/>
       <OnlineBooking />
-      {/* <MeetGuide /> */}
+      <MeetGuide />
       <PopularBlog />
     </div>
   );
