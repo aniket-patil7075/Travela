@@ -37,9 +37,9 @@ function MeetGuide() {
           ----- TRAVEL GUIDE -----
         </h4>
         <h1 className="text-center">Meet Our Guide</h1>
-        <div className="d-flex flex-wrap my-5 ">
+        <div className="meetGuide d-flex flex-wrap my-5 ">
           {guide.map((guide, index) => (
-            <div className="guideCard mx-3">
+            <div className="guideCard mx-2">
               <Card className="" key={index}>
                 <div className="guideImg">
                   <Card.Img variant="top" className="" src={guide.src} />
