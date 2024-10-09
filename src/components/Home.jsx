@@ -6,7 +6,6 @@ import InputGroup from "react-bootstrap/InputGroup";
 import AboutUs from "./AboutUs";
 import OurServices from "./OurServices";
 import Destination from "./Destination";
-import Blog from "./Blog";
 import TheWorld from "./TheWorld";
 import AwesomePack from "./AwesomePack";
 import OnlineBooking from "./OnlineBooking";
@@ -14,8 +13,14 @@ import PopularBlog from "./PopularBlog";
 import MeetGuide from "./MeetGuide";
 import Tourism from "./Tourism";
 import Testimonial from "./Testimonial";
+import {useNavigate} from 'react-router-dom'
 
 function Home() {
+  const navigate = useNavigate();
+  function discoverNow (){
+    navigate('/Packages')
+  }
+
   return (
     <div>
       <div>
@@ -41,6 +46,7 @@ function Home() {
                 variant=""
                 id="discovernow"
                 className="rounded-pill fw-bold me-5 px-5 py-3 ms-3 mt-5 "
+                onClick={discoverNow}
               >
                 Discover Now
               </Button>
@@ -66,6 +72,7 @@ function Home() {
                 variant=""
                 id="discovernow"
                 className="rounded-pill fw-bold me-5 px-5 py-3 ms-3 mt-5 "
+                onClick={discoverNow}
               >
                 Discover Now
               </Button>
@@ -90,6 +97,7 @@ function Home() {
                 variant=""
                 id="discovernow"
                 className="rounded-pill fw-bold me-5 px-5 py-3 ms-3 mt-5 "
+                onClick={discoverNow}
               >
                 Discover Now
               </Button>
