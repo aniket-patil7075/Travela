@@ -28,6 +28,7 @@ function App() {
         <Route path='/Booknow' element={<Booknow/>}/>
         <Route path='/registration' element={<Registration/>} />
         <Route path='/Login' element={<Login/>} />
+        <Route path='/Booknow' element={<Booknow/>} />
       </Routes>
       <Footer/>
      </BrowserRouter>

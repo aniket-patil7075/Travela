@@ -42,6 +42,9 @@ function Header() {
   function login() {
     navigate("/Login");
   }
+  function bookNow(){
+    navigate("/Booknow")
+  }
 
   return (
     <div>
@@ -210,6 +213,7 @@ function Header() {
                     variant=""
                     id="discovernow"
                     className="fw-bold py-2 mt-3 rounded rounded-pill  me-4"
+                    onClick={bookNow}
                   >
                     Book Now
                   </Button>
