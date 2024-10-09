@@ -3,7 +3,14 @@ import React from 'react'
 function About() {
   return (
     <div>
-      <h1 className='text-dark'>About</h1>
+      
+      <div className="div-mainImg">
+        <div className="overlay">
+          <h1 className="mainFontSize fw-bold text-light">Contact us</h1>
+          <h5 className="params">Home / Pages / <span className="text-light">About</span> </h5>
+        </div>
+      </div>
+      
     </div>
   )
 }

@@ -17,7 +17,7 @@ function Destination() {
             <Container>
                 <h4 className='colorBlue pt-5 pb-2 text-center'>----- DESTINATION -----</h4>
                 <h1 className='text-center'>Popular Destination</h1>
-                <div className='d-flex justify-content-center py-5 d-inline-flex flex-wrap'>
+                <div className='d-flex py-5 d-inline-flex flex-wrap justify-content-center'>
                     <Button
                         variant=""
                         className={`destiBtn rounded-pill py-2 m-3 ${activeButton === 'All' ? 'active-btn' : ''}`}

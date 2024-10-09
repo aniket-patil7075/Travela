@@ -79,8 +79,7 @@ function Tourism() {
         <Row lg="12" className="px-2">
           {/* Column 1 */}
           <Col lg="2" md="6" className="p-1">
-            {
-              activeButton==="All" && (
+            {activeButton === "All" && (
               <div className=" div-touriimg h-50">
                 <img
                   src="/gallery-1.jpg"
@@ -88,7 +87,7 @@ function Tourism() {
                   alt="Gallery"
                 />
                 <div className=" p-5 opaci"></div>
-  
+
                 <div
                   className="plus rounded rounded-circle text-center mt-4 me-4"
                   id="i"
@@ -96,17 +95,16 @@ function Tourism() {
                 <div>
                   <FaPlus className="touri-plus mb-5" />
                 </div>
-  
+
                 <div className="info text-center">
                   <h5>WORLD TOUR</h5>
                   <a href="#" className="text-decoration-none ">
                     View All Place <FaArrowRight />
                   </a>{" "}
                 </div>
-              </div>)
-            }
-            {
-              activeButton==="All" && (
+              </div>
+            )}
+            {activeButton === "All" && (
               <div className=" div-touriimg h-50">
                 <img
                   src="/gallery-6.jpg"
@@ -121,423 +119,434 @@ function Tourism() {
                 <div>
                   <FaPlus className="touri-plus mb-5" />
                 </div>
-  
+
                 <div className="info text-center">
                   <h5>WORLD TOUR</h5>
                   <a href="#" className="text-decoration-none ">
                     View All Place <FaArrowRight />
                   </a>{" "}
                 </div>
-              </div>)
-            }
-            
+              </div>
+            )}
           </Col>
 
           {/* Column 2 */}
           <Col lg="3" md="6" className="p-1">
-            {activeButton==="All" && (
+            {activeButton === "All" && (
               <div className=" div-touriimg h-50">
-              <img
-                src="/gallery-2.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className=" p-5 opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>
-              <div>
-                <FaPlus className="touri-plus mb-5" />
-              </div>
+                <img
+                  src="/gallery-2.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className=" p-5 opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
 
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-            </div>
-          )}
-            {activeButton==="All" && (<div className=" div-touriimg h-50">
-              <img
-                src="/gallery-7.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className=" p-5 opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>{" "}
-              <div>
-                <FaPlus className="touri-plus mb-5" />
+            )}
+            {activeButton === "All" && (
+              <div className=" div-touriimg h-50">
+                <img
+                  src="/gallery-7.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className=" p-5 opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>{" "}
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
-              </div>
-            </div>)}
+            )}
           </Col>
           {/* Column 3 */}
           <Col lg="2" md="6" className="p-1">
-            {activeButton==="All" && (<div className=" div-touriimg h-50">
-              <img
-                src="/gallery-3.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className=" p-5 opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>{" "}
-              <div>
-                <FaPlus className="touri-plus mb-5" />
+            {activeButton === "All" && (
+              <div className=" div-touriimg h-50">
+                <img
+                  src="/gallery-3.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className=" p-5 opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>{" "}
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
+            )}
+            {activeButton === "All" && (
+              <div className=" div-touriimg h-50">
+                <img
+                  src="/gallery-8.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className=" p-5 opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>{" "}
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-            </div>)}
-            {activeButton==="All" && (<div className=" div-touriimg h-50">
-              <img
-                src="/gallery-8.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className=" p-5 opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>{" "}
-              <div>
-                <FaPlus className="touri-plus mb-5" />
-              </div>
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
-              </div>
-            </div>)}
+            )}
           </Col>
           {/* Column 4 */}
           <Col lg="3" md="6" className="p-1">
-            {activeButton==="All" && (<div className=" div-touriimg h-50">
-              <img
-                src="/gallery-4.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className=" p-5 opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>{" "}
-              <div>
-                <FaPlus className="touri-plus mb-5" />
-              </div>
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
-              </div>
-            </div>)}
-            {activeButton==="All" && (
+            {activeButton === "All" && (
               <div className=" div-touriimg h-50">
-              <img
-                src="/gallery-9.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className=" p-5 opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>{" "}
-              <div>
-                <FaPlus className="touri-plus mb-5" />
+                <img
+                  src="/gallery-4.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className=" p-5 opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>{" "}
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
+            )}
+            {activeButton === "All" && (
+              <div className=" div-touriimg h-50">
+                <img
+                  src="/gallery-9.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className=" p-5 opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>{" "}
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-            </div>)}
+            )}
           </Col>
           {/* Column 5 */}
           <Col lg="2" className="p-1">
-            {activeButton==="All" && (<div className=" div-touriimg h-50">
-              <img
-                src="/gallery-5.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className=" p-5 opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>{" "}
-              <div>
-                <FaPlus className="touri-plus mb-5" />
+            {activeButton === "All" && (
+              <div className=" div-touriimg h-50">
+                <img
+                  src="/gallery-5.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className=" p-5 opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>{" "}
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
+            )}
+            {activeButton === "All" && (
+              <div className=" div-touriimg h-50">
+                <img
+                  src="/gallery-10.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className=" p-5 opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>{" "}
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-            </div>)}
-            {activeButton==="All" && (<div className=" div-touriimg h-50">
-              <img
-                src="/gallery-10.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className=" p-5 opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>{" "}
-              <div>
-                <FaPlus className="touri-plus mb-5" />
-              </div>
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
-              </div>
-            </div>)}
+            )}
           </Col>
         </Row>
         <Row lg="12" className="my-3">
-              <div className=" tour-gallery">
-              {activeButton === "Ocean" && (
+          <div className=" tour-gallery">
+            {activeButton === "Ocean" && (
               <div className=" div-touriimg h-75 mx-3">
-              <img
-                src="/gallery-2.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className="opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>
-              <div>
-                <FaPlus className="touri-plus mb-5" />
-              </div>
+                <img
+                  src="/gallery-2.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className="opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
 
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-            </div>
             )}
             {activeButton === "Ocean" && (
               <div className=" div-touriimg h-75 mx-3">
-              <img
-                src="/gallery-9.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className="opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>
-              <div>
-                <FaPlus className="touri-plus mb-5" />
-              </div>
+                <img
+                  src="/gallery-9.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className="opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
 
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-            </div>
             )}
             {activeButton === "World" && (
               <div className=" div-touriimg h-75 mx-3">
-              <img
-                src="/gallery-1.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className="opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>
-              <div>
-                <FaPlus className="touri-plus mb-5" />
-              </div>
+                <img
+                  src="/gallery-1.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className="opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
 
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-            </div>
             )}
             {activeButton === "World" && (
               <div className=" div-touriimg h-75 mx-3">
-              <img
-                src="/gallery-3.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className="opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>
-              <div>
-                <FaPlus className="touri-plus mb-5" />
-              </div>
+                <img
+                  src="/gallery-3.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className="opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
 
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-            </div>
             )}
             {activeButton === "Summer" && (
               <div className=" div-touriimg h-75 mx-3">
-              <img
-                src="/gallery-5.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className="opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>
-              <div>
-                <FaPlus className="touri-plus mb-5" />
-              </div>
+                <img
+                  src="/gallery-5.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className="opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
 
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-            </div>
             )}
             {activeButton === "Summer" && (
               <div className=" div-touriimg h-75 mx-3">
-              <img
-                src="/gallery-6.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className="opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>
-              <div>
-                <FaPlus className="touri-plus mb-5" />
-              </div>
+                <img
+                  src="/gallery-6.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className="opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
 
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-            </div>
             )}
             {activeButton === "Summer" && (
               <div className=" div-touriimg h-75 mx-3">
-              <img
-                src="/gallery-7.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className="opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>
-              <div>
-                <FaPlus className="touri-plus mb-5" />
-              </div>
+                <img
+                  src="/gallery-7.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className="opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
 
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-            </div>
             )}
             {activeButton === "Sport" && (
               <div className=" div-touriimg h-75 mx-3">
-              <img
-                src="/gallery-9.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className="opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>
-              <div>
-                <FaPlus className="touri-plus mb-5" />
-              </div>
+                <img
+                  src="/gallery-9.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className="opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
 
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-            </div>
             )}
             {activeButton === "Sport" && (
               <div className=" div-touriimg h-75 mx-3">
-              <img
-                src="/gallery-8.jpg"
-                className="img-fluid touri-img h-100"
-                alt="Gallery"
-              />
-              <div className="opaci"></div>
-              <div
-                className="plus rounded rounded-circle text-center mt-4 me-4"
-                id="i"
-              ></div>
-              <div>
-                <FaPlus className="touri-plus mb-5" />
-              </div>
+                <img
+                  src="/gallery-8.jpg"
+                  className="img-fluid touri-img h-100"
+                  alt="Gallery"
+                />
+                <div className="opaci"></div>
+                <div
+                  className="plus rounded rounded-circle text-center mt-4 me-4"
+                  id="i"
+                ></div>
+                <div>
+                  <FaPlus className="touri-plus mb-5" />
+                </div>
 
-              <div className="info text-center">
-                <h5>WORLD TOUR</h5>
-                <a href="#" className="text-decoration-none ">
-                  View All Place <FaArrowRight />
-                </a>{" "}
+                <div className="info text-center">
+                  <h5>WORLD TOUR</h5>
+                  <a href="#" className="text-decoration-none ">
+                    View All Place <FaArrowRight />
+                  </a>{" "}
+                </div>
               </div>
-            </div>
             )}
-              </div>
-            
+          </div>
         </Row>
       </Container>
     </div>

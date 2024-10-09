@@ -9,6 +9,16 @@
 .colorGray{
   color: gray;
 }
+.overlay .params{
+  position: absolute;
+  left: 42%;
+  top: 69%;
+  color: #1f05e6;
+}
+.mainFontSize{
+  font-size: 60px;
+  margin-top: 85px;
+}
 
 .header-icon:hover{
   color: #13357B;
@@ -511,7 +521,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(19, 53, 123, 0.6); /* #13357b with transparency */
+  background-color: rgba(19, 54, 123, 0.49); /* #13357b with transparency */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -699,6 +709,7 @@ body {
 
 .tour-gallery{
   display: flex;
+  justify-content: center;
 }
 
 .testiDiv{
@@ -729,6 +740,16 @@ body {
 
 .center-background .p-3 {
   color: white !important;
+}
+
+.div-mainImg{
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-image: url('/breadcrumb-bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 @media  (max-width:426px){
