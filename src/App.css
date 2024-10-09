@@ -701,6 +701,36 @@ body {
   display: flex;
 }
 
+.testiDiv{
+  border-radius: 15px;
+  
+}
+.testi img{
+   width: 100px;
+   position: absolute;
+   top:43%;
+   left: 38%;  
+}
+
+.testi-i{
+  color: #13357B;
+  line-height: 5px;
+}
+.packCard1{
+  flex: 0 0 400px;
+  /* padding: 10px; */
+  height: 200px;
+}
+.center-background {
+  background-color:#13357B !important;
+  color: white !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.center-background .p-3 {
+  color: white !important;
+}
+
 @media  (max-width:426px){
 
   
@@ -940,6 +970,7 @@ body {
     /* padding: 10px; */
     height: 200px;
   }
+  
 }
 
 @media (min-width:1440px) {

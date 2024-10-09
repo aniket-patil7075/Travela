@@ -13,6 +13,7 @@ import OnlineBooking from "./OnlineBooking";
 import PopularBlog from "./PopularBlog";
 import MeetGuide from "./MeetGuide";
 import Tourism from "./Tourism";
+import Testimonial from "./Testimonial";
 
 function Home() {
   return (
@@ -122,6 +123,7 @@ function Home() {
       <OnlineBooking />
       <MeetGuide />
       <PopularBlog />
+      <Testimonial/>
     </div>
   );
 }
