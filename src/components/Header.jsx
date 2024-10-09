@@ -14,6 +14,7 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import {useNavigate} from 'react-router-dom'
 
 function Header() {
 
@@ -34,6 +35,14 @@ function Header() {
         };
       }, []);
     
+      const navigate = useNavigate();
+
+      function signUp(){
+        navigate('/registration')
+      }
+      function login(){
+        navigate('/Login')
+      }
 
     return (
         <div>
@@ -53,10 +62,10 @@ function Header() {
 
                     {/* -------------------------------------------------------- */}
 
-                    <FaUser className='register py-2 px-2' style={{ width: "35px", height: "35px" }} />
-                    <span className='py-1 me-3'>Register</span>
+                    <div style={{ cursor: 'pointer' }} onClick={signUp}><FaUser className='register py-2 px-2' style={{ width: "35px", height: "35px" }} />
+                    <span className='py-1 me-3'>Register</span></div>
 
-                    <FaArrowRightToBracket className='py-2 px-2' style={{ width: "40px", height: "35px" }} /><span className='py-1 me-3'>Login</span>
+                    <div style={{ cursor: 'pointer' }} onClick={login}><FaArrowRightToBracket className='py-2 px-2' style={{ width: "40px", height: "35px" }} /><span className='py-1 me-3'>Login</span></div>
 
                     <FaHome className='py-2 px-2' style={{ width: "40px", height: "35px" }} />
                     <NavDropdown
@@ -79,11 +88,11 @@ function Header() {
             <div className='' >
                 <Navbar expand="lg " className="border-bottom-custom bg-transparent position-fixed w-100 z-index-10 mt-2 mt-sm-2 mt-md-2 mt-lg-5" style={{ backdropFilter: 'blur(1px)', py: '4' }} >
                     <Container fluid>
-                        <h1 className='travela ps-2 text-light'><FaLocationDot className='me-1' />Travela</h1>
+                        <h1 className='travela ps-2 ms-3 text-light'><FaLocationDot className='me-1' />Travela</h1>
                         <Navbar.Toggle className='custom-toggle' aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav
-                                className="custom-navbar  navbar-light me-auto my-2 my-lg-0"
+                                className="custom-navbar navbar-light me-auto my-2 my-lg-0"
                                 style={{ maxHeight: '100px',height:'100px' }}
                                 navbarScroll
                             >

@@ -9,6 +9,7 @@
 .colorGray{
   color: gray;
 }
+
 .overlay .params{
   position: absolute;
   left: 42%;
@@ -41,7 +42,7 @@
 }
 
 #navbarScrollingDropdown::after {
-  border-top-color: #f8f9fa;
+  border-top-color: #f8f9fa !important;
 }
 
 .navbar.scrolled {
@@ -59,7 +60,7 @@
 .navbar.scrolled .blue1:hover .nav-link{
   color: white !important;
 }
-.navbar.scrolled:hover #pages {
+.navbar.scrolled #pages:hover {
   color: white !important; 
 }
 
@@ -771,6 +772,28 @@ body {
   .h55{
     font-size: 10px;
   }
+  
+  .custom-navbar {
+    background-color: white !important;
+    width: 40%;
+  }
+
+  .custom-navbar .nav-link {
+    color: #13357b !important;
+  }
+
+  #pages {
+    color: #13357B;
+  }
+
+  .blue1:hover {
+    background-color: white;
+    color: #13357B;
+  }
+
+  .custom-toggle {
+    margin-right: 10px;
+  }
   .para::after{
     position: absolute;
     content: '';
@@ -996,7 +1019,7 @@ body {
 
 @media (min-width:1440px) {
   .register {
-    margin-left: 780px;
+    margin-left: 860px;
   }
  
   

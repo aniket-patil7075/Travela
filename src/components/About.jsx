@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutUs from "./AboutUs";
 
 function About() {
   return (
@@ -10,7 +11,7 @@ function About() {
           <h5 className="params">Home / Pages / <span className="text-light">About</span> </h5>
         </div>
       </div>
-      
+      <AboutUs/>
     </div>
   )
 }

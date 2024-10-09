@@ -1,4 +1,6 @@
 import React from 'react'
+import AwesomePack from './AwesomePack'
+import OnlineBooking from './OnlineBooking'
 
 function Packages() {
   return (
@@ -9,6 +11,8 @@ function Packages() {
           <h5 className="params">Home / Pages / <span className="text-light">Packages</span> </h5>
         </div>
       </div>
+      <AwesomePack/>
+      <OnlineBooking/>
     </div>
   )
 }

@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 
 function AboutUs() {
   return (
-    <div className='' style={{ marginTop: '250px' }}>
+    <div className='' style={{ marginTop: '200px' }}>
       <Container>
         <Row>
           <Col sm="12" md="12" lg="5" className='px-4'>

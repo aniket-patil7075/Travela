@@ -10,7 +10,7 @@ import { RiMailOpenFill } from "react-icons/ri";
 
 function Contact() {
   return (
-    <div className=" bg-body-secondary ">
+    <div className="py-5 bg-body-secondary ">
       <div className="div-mainImg">
         <div className="overlay">
           <h1 className="mainFontSize fw-bold text-light">Contact us</h1>
@@ -43,7 +43,7 @@ function Contact() {
               </div>
             </Col>
 
-            <Col lg="7" className="ms-3">
+            <Col lg="7" className="ms-5">
               <h4>Send us a message</h4>
               <p>
                 The contact form is currently inactive. Get a functional and
@@ -116,6 +116,18 @@ function Contact() {
             </Col>
           </Row>
         </div>
+        <div className="my-5 bg-light">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d122295.92004806882!2d74.25314605000001!3d16.689514100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1728474440167!5m2!1sen!2sin"
+    width="100%"
+    height="450"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
+
       </Container>
     </div>
   );

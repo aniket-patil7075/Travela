@@ -10,6 +10,8 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Booknow from './components/Booknow';
 import Footer from './components/Footer';
+import Registration from './components/Registration';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path='/Blog' element={<Blog/>}/>
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='/Booknow' element={<Booknow/>}/>
+        <Route path='/registration' element={<Registration/>} />
+        <Route path='/Login' element={<Login/>} />
       </Routes>
       <Footer/>
      </BrowserRouter>
