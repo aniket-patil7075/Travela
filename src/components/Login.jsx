@@ -29,12 +29,12 @@ function Login() {
            <Col>
            <Form.Group as={Col} controlId="formGridEmail" className="mb-4">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control type="email" placeholder="Enter email" className="py-3" />
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control type="password" placeholder="Password" className="py-3" />
             </Form.Group>
            </Col>
           </Row>

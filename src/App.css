@@ -565,6 +565,12 @@ body {
   border: 1px solid white;
 }
 
+.explore1 p{
+  text-align: center;
+  width: 200px;
+  border-right: 1px solid white;
+}
+
 .touri-img{
   border-radius: 16px;
   width: 100%;      /* Ensure image takes the full width of its container */
@@ -752,6 +758,8 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
+
+
 
 @media  (max-width:426px){
 

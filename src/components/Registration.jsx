@@ -26,29 +26,29 @@ function Registration() {
           <h2 className="text-center mb-4">Registration</h2>
           <Form.Group controlId="formGridName" className="mb-4">
             <Form.Label>Name</Form.Label>
-            <Form.Control type="text" placeholder="Enter name" />
+            <Form.Control type="text" placeholder="Enter name" className="py-3" />
           </Form.Group>
 
           
             <Form.Group as={Col} controlId="formGridEmail" className="mb-4">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control type="email" placeholder="Enter email" className="py-3" />
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridPassword" className="mb-4">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control type="password" placeholder="Password" className="py-3" />
             </Form.Group>
           
 
           <Form.Group as={Col} controlId="formGridPhone" className="mb-4">
             <Form.Label>Phone</Form.Label>
-            <Form.Control type="text" placeholder="Enter phone" />
+            <Form.Control type="text" placeholder="Enter phone" className="py-3" />
           </Form.Group>
 
           <Form.Group className="mb-4" controlId="formGridAddress1">
             <Form.Label>Address</Form.Label>
-            <Form.Control placeholder="Enter city" />
+            <Form.Control placeholder="Enter city" className="py-3" />
           </Form.Group>
 
           <Button
