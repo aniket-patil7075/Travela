@@ -12,6 +12,12 @@ import Booknow from './components/Booknow';
 import Footer from './components/Footer';
 import Registration from './components/Registration';
 import Login from './components/Login';
+import Desti from './components/Desti';
+import ExploreTour from './components/ExploreTour';
+import OurGallery from './components/OurGallery';
+import Testi from './components/Testi';
+import TravelBooking from './components/TravelBooking';
+import TravelGuides from './components/TravelGuides';
 
 function App() {
   return (
@@ -29,7 +35,14 @@ function App() {
         <Route path='/registration' element={<Registration/>} />
         <Route path='/Login' element={<Login/>} />
         <Route path='/Booknow' element={<Booknow/>} />
+        <Route path='/Desti' element={<Desti/>} />
+        <Route path='/ExploreTour' element={<ExploreTour/>} />
+        <Route path='/OurGallery' element={<OurGallery/>} />
+        <Route path='/Testi' element={<Testi/>} />
+        <Route path='/TravelBooking' element={<TravelBooking/>} />
+        <Route path='/TravelGuide' element={<TravelGuides/>} />
       </Routes>
+      
       <Footer/>
      </BrowserRouter>
       

@@ -13,7 +13,7 @@ function Tourism() {
     setActiveButton(destination);
   };
   return (
-    <div style={{ marginTop: "140px" }}>
+    <div style={{ marginTop: "100px" }}>
       <h4 className="colorBlue pt-5 pb-2 text-center">
         ----- OUR GALLERY -----
       </h4>

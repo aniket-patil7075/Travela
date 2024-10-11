@@ -8,7 +8,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 function OnlineBooking() {
   return (
-    <div style={{ marginTop: "120px" }}>
+    <div >
       <div className="div-ballonImg">
         <div className="overlay">
           <Container>

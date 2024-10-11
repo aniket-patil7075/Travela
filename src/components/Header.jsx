@@ -182,20 +182,20 @@ function Header() {
                     className="fw-bold py-3  text-light mb-5"
                     id="navbarScrollingDropdown"
                   >
-                    <NavDropdown.Item to="/Blog">Destination</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item as={Link} to="/Desti">Destination</NavDropdown.Item>
+                    <NavDropdown.Item  as={Link} to="/ExploreTour">
                       Explore Tour
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item  as={Link} to="/TravelBooking">
                       Travel Booking
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item  as={Link} to="/OurGallery">
                       Our Gallery
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item  as={Link} to="/TravelGuide">
                       Travel Guides
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item  as={Link} to="/Testi">
                       Testimonials
                     </NavDropdown.Item>
                   </NavDropdown>

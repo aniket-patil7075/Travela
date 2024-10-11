@@ -21,7 +21,7 @@ import { FaCcDiscover } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div style={{ marginTop: "120px" }}>
+    <div>
       <div className="div-footerImg">
         <div className="overlay">
           <Container>

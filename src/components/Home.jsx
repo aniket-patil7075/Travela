@@ -128,10 +128,12 @@ function Home() {
       <TheWorld />
       <AwesomePack />
       <Tourism/>
+      <div style={{ marginTop: "120px" }}></div>
       <OnlineBooking />
       <MeetGuide />
       <PopularBlog />
       <Testimonial/>
+      <div style={{marginBottom:"70px"}}></div>
     </div>
   );
 }
