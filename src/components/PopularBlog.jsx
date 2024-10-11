@@ -3,11 +3,13 @@ import Container from "react-bootstrap/esm/Container";
 import Button from "react-bootstrap/Button";
 import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
 import Card from "react-bootstrap/Card";
+import {useNavigate} from 'react-router-dom'
 
 function PopularBlog() {
   const [activeButton, setActiveButton] = useState("");
   const [visibleIndex, setVisibleIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);
+  const navigate = useNavigate();
 
   const cards = [
     {
@@ -161,7 +163,8 @@ function PopularBlog() {
                     <Button
                       variant="outline-primary"
                       className="position-absolute rounded rounded-pill px-4 fw-bold"
-                      id="button-addon2"
+                      id="button-addon2" 
+                      onClick={()=>navigate('/Blog')}
                     >
                       Read More
                     </Button>

@@ -695,7 +695,7 @@ body {
 .guideBody:hover::before {
   border-radius: 2%;
   height: 114px;
-  background-color: #13357b;
+  background-color: #13367b6f;
 }
 
 .GuideSocial{

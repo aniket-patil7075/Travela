@@ -5,8 +5,10 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import {useNavigate} from 'react-router-dom'
 
 function OnlineBooking() {
+  const navigate = useNavigate()
   return (
     <div >
       <div className="div-ballonImg">
@@ -34,6 +36,7 @@ function OnlineBooking() {
                   variant="outline-primary"
                   id="discovernow"
                   className="rounded-pill fw-bold py-3 px-5 mt-3"
+                  onClick={()=>navigate('/Booknow')}
                 >
                   Read More
                 </Button>
@@ -152,6 +155,7 @@ function OnlineBooking() {
                     variant="outline-primary"
                     id="discovernow"
                     className="rounded-pill fw-bold py-3 px-5 w-100"
+                    onClick={()=>navigate('/Booknow')}
                   >
                     Book Now
                   </Button>

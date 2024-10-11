@@ -14,6 +14,7 @@ import MeetGuide from "./MeetGuide";
 import Tourism from "./Tourism";
 import Testimonial from "./Testimonial";
 import {useNavigate} from 'react-router-dom'
+import Gallery from "./Gallery";
 
 function Home() {
   const navigate = useNavigate();
@@ -133,7 +134,8 @@ function Home() {
       <MeetGuide />
       <PopularBlog />
       <Testimonial/>
-      <div style={{marginBottom:"70px"}}></div>
+      <div style={{ marginTop: "120px" }}></div>
+      <Gallery/>
     </div>
   );
 }

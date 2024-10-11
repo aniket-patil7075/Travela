@@ -7,8 +7,10 @@ import { FaGlobe } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaHotel } from "react-icons/fa";
 import { FaCog } from "react-icons/fa";
+import {useNavigate} from 'react-router-dom'
 
 function OurServices() {
+  const navigate = useNavigate()
   return (
     <div className='py-5 bg-body-secondary' style={{ marginTop: '80px' }}>
       <Container>
@@ -110,7 +112,7 @@ function OurServices() {
           </Col>
         </Row>
         <div className='d-flex justify-content-center'>
-          <Button variant="outline-primary" id='discovernow' className='rounded-pill fw-bold py-3 px-5 ' >Service More</Button> 
+          <Button variant="outline-primary" id='discovernow' className='rounded-pill fw-bold py-3 px-5 ' onClick={()=>navigate('/Services')} >Service More</Button> 
         </div>
       </Container>
     </div>

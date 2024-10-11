@@ -18,6 +18,7 @@ import OurGallery from './components/OurGallery';
 import Testi from './components/Testi';
 import TravelBooking from './components/TravelBooking';
 import TravelGuides from './components/TravelGuides';
+import Destination from './components/Destination';
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
         <Route path='/Testi' element={<Testi/>} />
         <Route path='/TravelBooking' element={<TravelBooking/>} />
         <Route path='/TravelGuide' element={<TravelGuides/>} />
+        <Route path='/Destination' element={<Destination/>} />
+        
+
       </Routes>
       
       <Footer/>

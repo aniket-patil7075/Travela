@@ -4,8 +4,10 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/esm/Container';
 import { FaArrowRight } from "react-icons/fa";
 import Button from 'react-bootstrap/Button';
+import {useNavigate} from 'react-router-dom'
 
 function AboutUs() {
+  const navigate = useNavigate()
   return (
     <div className='' style={{ marginTop: '200px' }}>
       <Container>
@@ -40,7 +42,7 @@ function AboutUs() {
                   <div className='mb-2 text-secondary'><FaArrowRight className='colorBlue me-3'/>24/7 Service</div>
                 </Col>
               </Row>
-              <Button variant="outline-primary" id='discovernow' className='servBtn rounded-pill fw-bold py-3 px-5 mt-3' >Read More</Button> 
+              <Button variant="outline-primary" id='discovernow' className='servBtn rounded-pill fw-bold py-3 px-5 mt-3' onClick={()=>navigate('/About')} >Read More</Button> 
 
             </div>
           </Col>

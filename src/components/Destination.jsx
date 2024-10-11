@@ -84,7 +84,7 @@ function Destination() {
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
                 >
-                  20 Photos
+                  5 Photos
                 </Button>
                 <h5>New York City</h5>
                 <a href="#" className="text-decoration-none ">
@@ -109,7 +109,7 @@ function Destination() {
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
                 >
-                  20 Photos
+                  5 Photos
                 </Button>
                 <h5>Los angelas</h5>
                 <a href="#" className="text-decoration-none ">
@@ -134,7 +134,7 @@ function Destination() {
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
                 >
-                  20 Photos
+                  5 Photos
                 </Button>
                 <h5>Los angelas</h5>
                 <a href="#" className="text-decoration-none ">
@@ -163,7 +163,7 @@ function Destination() {
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
                 >
-                  20 Photos
+                  5 Photos
                 </Button>
                 <h5>Las vegas</h5>
                 <a href="#" className="text-decoration-none ">
@@ -194,7 +194,7 @@ function Destination() {
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
                 >
-                  20 Photos
+                  5 Photos
                 </Button>
                 <h5>Las vegas</h5>
                 <a href="#" className="text-decoration-none ">
@@ -218,7 +218,7 @@ function Destination() {
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
                 >
-                  20 Photos
+                  5 Photos
                 </Button>
                 <h5>Los angelas</h5>
                 <a href="#" className="text-decoration-none ">
@@ -242,7 +242,7 @@ function Destination() {
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
                 >
-                  20 Photos
+                  5 Photos
                 </Button>
                 <h5>Los angelas</h5>
                 <a href="#" className="text-decoration-none ">
@@ -269,7 +269,7 @@ function Destination() {
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
                 >
-                  20 Photos
+                  5 Photos
                 </Button>
                 <h5>San francisco</h5>
                 <a href="#" className="text-decoration-none ">
@@ -294,7 +294,7 @@ function Destination() {
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
                 >
-                  20 Photos
+                  5 Photos
                 </Button>
                 <h5>Los angelas</h5>
                 <a href="#" className="text-decoration-none ">
