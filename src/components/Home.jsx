@@ -134,8 +134,6 @@ function Home() {
       <MeetGuide />
       <PopularBlog />
       <Testimonial/>
-      <div style={{ marginTop: "120px" }}></div>
-      <Gallery/>
     </div>
   );
 }

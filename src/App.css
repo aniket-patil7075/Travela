@@ -663,7 +663,7 @@ body {
 
 .guideCard:hover::before {
   border-radius: 2%;
-  height: 339px;
+  height: 351px;
   background-color: #13367b81;
 }
 
@@ -676,10 +676,11 @@ body {
   font-weight: 400;
   outline: none;
   transition: .5s;
+  height: 90px;
   z-index: 203;
 }
 
-.guideBody::before {
+.guideBody::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -691,11 +692,32 @@ body {
   transition: .5s;
   z-index: 203;
 }
-
-.guideBody:hover::before {
+.guideCard:hover ::after {
   border-radius: 2%;
-  height: 114px;
-  background-color: #13367b6f;
+  height: 90px;
+  background-color: #13357b;
+}
+
+.gtext{
+  top: 30%;
+  /* background-color: #13357B; */
+  /* padding: 10px; */
+  
+  left: 30%;
+  
+}
+.gtext1{
+  top: 50px;
+  left: 25%;
+  
+}
+.guideText{
+  position: absolute;
+  z-index: 300;
+  
+}
+.guideCard:hover .guideBody{
+  color: white;
 }
 
 .GuideSocial{
@@ -709,7 +731,7 @@ body {
   background-color: white;
   position: absolute;
   left: 13%;
-  top: 70%;
+  top: 74%;
   z-index: 204;
   /* margin-bottom: 25px; */
 }

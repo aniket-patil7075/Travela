@@ -19,6 +19,7 @@ import Testi from './components/Testi';
 import TravelBooking from './components/TravelBooking';
 import TravelGuides from './components/TravelGuides';
 import Destination from './components/Destination';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
@@ -43,8 +44,7 @@ function App() {
         <Route path='/TravelBooking' element={<TravelBooking/>} />
         <Route path='/TravelGuide' element={<TravelGuides/>} />
         <Route path='/Destination' element={<Destination/>} />
-        
-
+        <Route path='/Gallery' element={<Gallery/>} />
       </Routes>
       
       <Footer/>

@@ -22,8 +22,6 @@ function Booknow() {
         return <QRcode />;
       case "Card":
         return <CreditCard />;
-      case "COD":
-        return <COD />;
       default:
         return null;
     }
@@ -247,13 +245,6 @@ function Booknow() {
                   style={{ cursor: "pointer", borderColor: "#13357b" }}
                 >
                   Cards
-                </div>
-                <div
-                  className="p-3 bg-light border border-opacity-25"
-                  onClick={() => setSelectedOption("COD")}
-                  style={{ cursor: "pointer", borderColor: "#13357b" }}
-                >
-                  Cash on Delivery
                 </div>
               </Row>
             </Modal.Body>
