@@ -18,6 +18,7 @@ import { FaCcVisa } from "react-icons/fa";
 import { FaCcMastercard } from "react-icons/fa";
 import { FaCcPaypal } from "react-icons/fa";
 import { FaCcDiscover } from "react-icons/fa";
+import {Link} from 'react-router-dom'
 
 function Footer() {
   return (
@@ -109,57 +110,57 @@ function Footer() {
             </Col>
             <Col className="footerA py-3" md={6} lg={3}>
               <h4 className="mb-3">Company</h4>
-              <a href="/" className="">
+              <Link to="/About" className="">
                 <MdArrowForwardIos className="me-3" />
                 About
-              </a><br/>
-              <a href="/">
+              </Link><br/>
+              <Link to="/Contact">
                 <MdArrowForwardIos className="me-3" />
                 Careers
-              </a><br/>
-              <a className="" href="/">
+              </Link><br/>
+              <Link to="/Blog">
                 <MdArrowForwardIos className="me-3" />
                 Blog
-              </a><br/>
-              <a href="/">
+              </Link><br/>
+              <Link to="/About">
                 <MdArrowForwardIos className="me-3" />
                 Press
-              </a><br/>
-              <a href="/">
+              </Link><br/>
+              <Link to="/Packages">
                 <MdArrowForwardIos className="me-3" />
                 Gift Cards
-              </a><br/>
-              <a href="/">
+              </Link><br/>
+              <Link to="/Blog">
                 <MdArrowForwardIos className="me-3" />
                 Magazine
-              </a><br/>
+              </Link><br/>
             </Col>
             <Col className="footerA py-3" md={6} lg={3}>
               <h4 className="mb-3">Support</h4>
-              <a href="/">
+              <Link to="/Contact">
                 <MdArrowForwardIos className="me-3" />
                 Contact
-              </a><br/>
-              <a href="/">
+              </Link><br/>
+              <Link to="/Services">
                 <MdArrowForwardIos className="me-3" />
                 Legal Notice
-              </a><br/>
-              <a href="/">
+              </Link><br/>
+              <Link to="/Services">
                 <MdArrowForwardIos className="me-3" />
                 Privacy Policy
-              </a><br/>
-              <a href="/">
+              </Link><br/>
+              <Link to="/About">
                 <MdArrowForwardIos className="me-3" />
                 Terms and Conditions
-              </a><br/>
-              <a href="/">
+              </Link><br/>
+              <Link to="/Contact">
                 <MdArrowForwardIos className="me-3" />
                 Sitemap
-              </a><br/>
-              <a href="/">
+              </Link><br/>
+              <Link to="/Services">
                 <MdArrowForwardIos className="me-3" />
                 Cookie policy
-              </a><br/>
+              </Link><br/>
             </Col>
             <Col md={6} lg={3} className="footerA py-3">
                 <div className="">

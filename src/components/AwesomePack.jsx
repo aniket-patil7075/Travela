@@ -3,11 +3,13 @@ import Container from 'react-bootstrap/esm/Container';
 import Button from 'react-bootstrap/Button';
 import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
 import Card from 'react-bootstrap/Card';
+import {useNavigate} from 'react-router-dom'
 
 function AwesomePack() {
   const [activeButton, setActiveButton] = useState('');
   const [visibleIndex, setVisibleIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);
+  const navigat = useNavigate('')
 
   const cards = [
     {
@@ -150,8 +152,8 @@ function AwesomePack() {
                 </Card.Body>
                 <Card.Footer className='' style={{ backgroundColor: "#13357B" }}>
                   <div className='d-flex justify-content-between py-1'>
-                    <small className="fw-bold text-light">{card.updated1}</small>
-                    <small className="fw-bold text-light">{card.updated2}</small>
+                    <small className="fw-bold text-light" onClick={()=>navigat('Packages')} style={{cursor:"pointer"}}>{card.updated1}</small>
+                    <small className="fw-bold text-light" onClick={()=>navigat('Booknow')} style={{cursor:"pointer"}}>{card.updated2}</small>
                   </div>
                 </Card.Footer>
               </Card>

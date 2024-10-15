@@ -12,6 +12,7 @@ function Packages() {
         </div>
       </div>
       <AwesomePack/>
+      <div style={{marginTop:"100px"}}></div>
       <OnlineBooking/>
     </div>
   )
