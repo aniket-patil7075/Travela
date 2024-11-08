@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
@@ -9,6 +9,9 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { RiMailOpenFill } from "react-icons/ri";
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="py-5 bg-body-secondary ">
       <div className="div-mainImg">

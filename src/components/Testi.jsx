@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Testimonial from './Testimonial'
 
 function Testi() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
         <div className="div-mainImg">

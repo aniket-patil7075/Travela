@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
@@ -7,6 +7,9 @@ import { FaArrowRight } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
 
 function Tourism() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [activeButton, setActiveButton] = useState("All");
 
   const handleButtonClick = (destination) => {

@@ -1,9 +1,12 @@
-import React from 'react'; 
+import React, { useEffect } from 'react'; 
 import Row from "react-bootstrap/Row"; 
 import Col from "react-bootstrap/Col";
 import { Container } from 'react-bootstrap';
 
 function Gallery() { 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return ( 
     <div > 
       <div className="div-mainImg"> 

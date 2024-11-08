@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AwesomePack from './AwesomePack'
 import OnlineBooking from './OnlineBooking'
 
 function Packages() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="div-mainImg">

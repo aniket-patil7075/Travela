@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Col, Container } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import { FaTwitter } from "react-icons/fa";
@@ -7,6 +7,9 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
 function MeetGuide() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const guide = [
     {
       src: "/guide-1.jpg",

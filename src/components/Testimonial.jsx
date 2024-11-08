@@ -5,6 +5,9 @@ import Card from 'react-bootstrap/Card';
 import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
 
 function Testimonial() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [activeButton, setActiveButton] = useState('');
   const [visibleIndex, setVisibleIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);

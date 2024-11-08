@@ -10,6 +10,9 @@ function AwesomePack() {
   const [visibleIndex, setVisibleIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);
   const navigat = useNavigate('')
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const cards = [
     {

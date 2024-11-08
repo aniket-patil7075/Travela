@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -21,6 +21,9 @@ import { FaCcDiscover } from "react-icons/fa";
 import {Link} from 'react-router-dom'
 
 function Footer() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div style={{ marginTop: "120px" }}>
       <div className="div-footerImg">

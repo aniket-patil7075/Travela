@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -8,6 +8,9 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import {useNavigate} from 'react-router-dom'
 
 function OnlineBooking() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate()
   return (
     <div >

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/esm/Container';
@@ -10,6 +10,9 @@ import { FaCog } from "react-icons/fa";
 import {useNavigate} from 'react-router-dom'
 
 function OurServices() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate()
   return (
     <div className='py-5 bg-body-secondary' style={{ marginTop: '80px' }}>

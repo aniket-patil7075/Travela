@@ -18,6 +18,9 @@ import { Link, useNavigate } from "react-router-dom";
 
 function Header() {
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector(".navbar");
       if (window.scrollY > 50) {

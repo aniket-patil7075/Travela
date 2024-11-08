@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
@@ -8,6 +8,9 @@ import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import Modal from 'react-bootstrap/Modal';
 function Destination() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [activeButton, setActiveButton] = useState("");
   const [show, setShow] = useState(false);
   const [selectedPlace, setSelectedPlace] = useState({ title: "", images: [] });
@@ -112,6 +115,7 @@ function Destination() {
                   variant="outline-primary"
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
+                  
                 >
                   5 Photos
                 </Button>

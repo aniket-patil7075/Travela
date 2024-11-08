@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import OnlineBooking from './OnlineBooking'
 
 function TravelBooking() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="div-mainImg">

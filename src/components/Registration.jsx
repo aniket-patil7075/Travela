@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/esm/Container";
@@ -7,6 +7,9 @@ import Row from "react-bootstrap/Row";
 import { useNavigate } from "react-router-dom";
 
 function Registration() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   function signUp(){
     navigate('/Login')

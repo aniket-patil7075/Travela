@@ -6,6 +6,9 @@ import Card from "react-bootstrap/Card";
 import {useNavigate} from 'react-router-dom'
 
 function PopularBlog() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [activeButton, setActiveButton] = useState("");
   const [visibleIndex, setVisibleIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);

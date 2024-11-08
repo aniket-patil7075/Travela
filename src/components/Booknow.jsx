@@ -14,6 +14,9 @@ import COD from "./COD";
 import QRcode from "./QRcode";
 
 function Booknow() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [selectedOption, setSelectedOption] = useState("QR");
 
   const renderPaymentOption = () => {

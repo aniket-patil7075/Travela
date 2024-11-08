@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/esm/Container";
@@ -8,6 +8,9 @@ import { FaLink } from "react-icons/fa";
 import Modal from "react-bootstrap/Modal";
 
 function TheWorld() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [show, setShow] = useState(false);
   const [selectedTour, setSelectedTour] = useState({ title: "", images: [] });
 

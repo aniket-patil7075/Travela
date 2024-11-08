@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/esm/Container';
@@ -8,6 +8,9 @@ import {useNavigate} from 'react-router-dom'
 
 function AboutUs() {
   const navigate = useNavigate()
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className='' style={{ marginTop: '200px' }}>
       <Container>
