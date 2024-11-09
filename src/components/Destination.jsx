@@ -115,7 +115,7 @@ function Destination() {
                   variant="outline-primary"
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
-                  
+                  onClick={()=>handleShow("New York",["/explore-tour-1.jpg","/explore-tour-2.jpg","/explore-tour-3.jpg","/explore-tour-4.jpg","/explore-tour-5.jpg"])}
                 >
                   5 Photos
                 </Button>
@@ -139,6 +139,7 @@ function Destination() {
                   variant="outline-primary"
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
+                  onClick={()=>handleShow("Califorina",["/gallery-1.jpg","/gallery-2.jpg","/gallery-3.jpg","/gallery-4.jpg","/gallery-5.jpg"])}
                 >
                   5 Photos
                 </Button>
@@ -162,6 +163,7 @@ function Destination() {
                   variant="outline-primary"
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
+                  onClick={()=>handleShow("Italy",["/gallery-6.jpg","/gallery-7.jpg","/gallery-8.jpg","/gallery-9.jpg","/gallery-10.jpg"])}
                 >
                   5 Photos
                 </Button>
@@ -191,6 +193,7 @@ function Destination() {
                   variant="outline-primary"
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
+                  onClick={()=>handleShow("Paris",["/gallery-11.jpg","/gallery-12.jpg","/explore-tour-6.jpg","/gallery-4.jpg","/gallery-5.jpg"])}
                 >
                   5 Photos
                 </Button>
@@ -214,6 +217,7 @@ function Destination() {
                   variant="outline-primary"
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
+                  onClick={()=>handleShow("Thailand",["/blog-1.jpg","/blog-2.jpg","/blog-3.jpg","/breadcrumb-bg.jpg","/gallery-6.jpg"])}
                 >
                   5 Photos
                 </Button>
@@ -237,6 +241,7 @@ function Destination() {
                   variant="outline-primary"
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
+                  onClick={()=>handleShow("Tokyo",["/packages-1.jpg","/packages-2.jpg","/packages-3.jpg","/packages-4.jpg","/gallery-6.jpg"])}
                 >
                   5 Photos
                 </Button>
@@ -262,6 +267,7 @@ function Destination() {
                   variant="outline-primary"
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
+                  onClick={()=>handleShow("San francisco",["/gallery-11.jpg","/gallery-12.jpg","/explore-tour-6.jpg","/gallery-4.jpg","/gallery-5.jpg"])}
                 >
                   5 Photos
                 </Button>
@@ -285,6 +291,7 @@ function Destination() {
                   variant="outline-primary"
                   id="discovernow"
                   className="rounded-pill fw-bold border border-light mb-2"
+                  onClick={()=>handleShow("Los angelas",["/destination-1.jpg","/destination-2.jpg","/explore-tour-3.jpg","/packages-4.jpg","/gallery-6.jpg"])}
                 >
                   5 Photos
                 </Button>

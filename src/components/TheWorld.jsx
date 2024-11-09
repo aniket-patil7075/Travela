@@ -98,7 +98,7 @@ function TheWorld() {
                 <div className="explore">
                   <h4>HISTORICAL TRIP</h4>
                   <div className="d-flex">
-                    <p className="fw-bold ps-4"onClick={() =>
+                    <p className="fw-bold ps-4" style={{cursor:"pointer"}} onClick={() =>
                         handleShow("Historical Tour", ["/explore-tour-2.jpg","destination-2.jpg","/gallery-2.jpg","/packages-2.jpg"])
                       }>View all places</p>
                     <FaArrowRight className="ms-2 mt-1" />
@@ -121,7 +121,9 @@ function TheWorld() {
                 <div className="explore">
                   <h4 className="ps-4">LONDON</h4>
                   <div className="d-flex">
-                    <p className="fw-bold ps-4" onClick={handleShow}>View all places</p>
+                    <p className="fw-bold ps-4" style={{cursor:"pointer"}} onClick={() =>
+                        handleShow("Beach Tour", ["/explore-tour-6.jpg","destination-5.jpg","/gallery-8.jpg","/packages-2.jpg"])
+                      }>View all places</p>
                     <FaArrowRight className="ms-2 mt-1" />
                   </div>
                 </div>
@@ -140,7 +142,7 @@ function TheWorld() {
                 <div className="explore">
                   <h4>HOLIDAY TOUR</h4>
                   <div className="d-flex">
-                    <p className="fw-bold ps-4" onClick={() =>
+                    <p className="fw-bold ps-4" style={{cursor:"pointer"}} onClick={() =>
                         handleShow("Holiday Tour", ["/explore-tour-3.jpg","destination-3.jpg","/gallery-3.jpg","/packages-3.jpg"])
                       }>View all places</p>
                     <FaArrowRight className="ms-2 mt-1" />
@@ -159,7 +161,7 @@ function TheWorld() {
                 <div className="explore">
                   <h4>FAMILY TOUR</h4>
                   <div className="d-flex">
-                    <p className="fw-bold ps-4" onClick={() =>
+                    <p className="fw-bold ps-4" style={{cursor:"pointer"}} onClick={() =>
                         handleShow("Family Tour", ["/explore-tour-4.jpg","destination-4.jpg","/gallery-4.jpg","/packages-4.jpg"])
                       }>View all places</p>
                     <FaArrowRight className="ms-2 mt-1" />
@@ -178,7 +180,9 @@ function TheWorld() {
                 <div className="explore">
                   <h4 className="ps-5">SPAIN</h4>
                   <div className="d-flex">
-                    <p className="fw-bold ps-4" onClick={handleShow}>View all places</p>
+                    <p className="fw-bold ps-4" style={{cursor:"pointer"}} onClick={() =>
+                        handleShow("Beach Tour", ["/explore-tour-6.jpg","destination-5.jpg","/gallery-8.jpg","/packages-2.jpg"])
+                      }>View all places</p>
                     <FaArrowRight className="ms-2 mt-1" />
                   </div>
                 </div>
@@ -197,7 +201,7 @@ function TheWorld() {
                 <div className="explore">
                   <h4 className="ps-4">ROAD TRIP</h4>
                   <div className="d-flex">
-                    <p className="fw-bold ps-4" onClick={() =>
+                    <p className="fw-bold ps-4" style={{cursor:"pointer"}} onClick={() =>
                         handleShow("Beach Tour", ["/explore-tour-6.jpg","destination-5.jpg","/gallery-8.jpg","/packages-2.jpg"])
                       }>View all places</p>
                     <FaArrowRight className="ms-2 mt-1" />
@@ -216,7 +220,7 @@ function TheWorld() {
                 <div className="explore">
                   <h4 className="ps-2">BEACH TOUR</h4>
                   <div className="d-flex">
-                    <p className="fw-bold ps-4" onClick={() =>
+                    <p className="fw-bold ps-4" style={{cursor:"pointer"}} onClick={() =>
                         handleShow("Beach Tour", ["/explore-tour-5.jpg","destination-5.jpg","/gallery-5.jpg","/packages-1.jpg"])
                       }>
                       View all places
@@ -238,7 +242,9 @@ function TheWorld() {
                 <div className="explore">
                   <h4 className="ps-5">JAPAN</h4>
                   <div className="d-flex">
-                    <p className="fw-bold ps-4" onClick={handleShow}>View all places</p>
+                    <p className="fw-bold ps-4" style={{cursor:"pointer"}} onClick={() =>
+                        handleShow("Beach Tour", ["/explore-tour-6.jpg","destination-5.jpg","/gallery-8.jpg","/packages-2.jpg"])
+                      }>View all places</p>
                     <FaArrowRight className="ms-2 mt-1" />
                   </div>
                 </div>

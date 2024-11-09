@@ -82,7 +82,7 @@ function Header() {
 
           {/* -------------------------------------------------------- */}
 
-          <div style={{ cursor: "pointer" }} onClick={signUp}>
+          <div style={{ cursor: "pointer" }} onClick={signUp} className="ps-4">
             <FaUser
               className="register py-2 px-2"
               style={{ width: "35px", height: "35px" }}
@@ -102,25 +102,8 @@ function Header() {
             className="py-2 px-2"
             style={{ width: "40px", height: "35px" }}
           />
-          <NavDropdown
-            id="nav-dropdown-dark-example"
-            title="My Dashboard"
-            menuVariant="light"
-            className="py-1 dashboard"
-            
-          >
-            <NavDropdown.Item href="#action/3.1" className="">
-              My Profile
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Inbox</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">
-              Notifications
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.4">
-              Account Settings
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.5">Log Out</NavDropdown.Item>
-          </NavDropdown>
+          <span className="py-1 me-1">My Profile</span>
+          
         </span>
       </div>
       <div className="">
