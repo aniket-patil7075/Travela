@@ -12,6 +12,8 @@ import Modal from "react-bootstrap/Modal";
 import CreditCard from "./CreditCard";
 import COD from "./COD";
 import QRcode from "./QRcode";
+import { FaCcMastercard } from "react-icons/fa";
+import { FaCcPaypal } from "react-icons/fa";
 
 function Booknow() {
   useEffect(() => {
@@ -236,18 +238,20 @@ function Booknow() {
                 style={{ borderColor: "#13357b" }}
               >
                 <div
-                  className="p-3 bg-light border border-opacity-25"
+                  className="p-3 bg-light border border-opacity-25 d-flex justify-content-between"
                   onClick={() => setSelectedOption("QR")}
                   style={{ cursor: "pointer", borderColor: "#13357b" }}
                 >
-                  UPI / QR
+                  <div>UPI / QR</div>
+                  <FaCcPaypal className="fs-3" />
                 </div>
                 <div
-                  className="p-3 bg-light border border-opacity-25"
+                  className="p-3 bg-light border border-opacity-25  d-flex justify-content-between"
                   onClick={() => setSelectedOption("Card")}
                   style={{ cursor: "pointer", borderColor: "#13357b" }}
                 >
-                  Cards
+                  <div>Cards</div>
+                  <FaCcMastercard className="fs-3" />
                 </div>
               </Row>
             </Modal.Body>

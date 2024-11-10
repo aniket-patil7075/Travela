@@ -45,13 +45,13 @@ function QRcode() {
     <Row>
     <Col>
     <div className='border border-secondary border-opacity-25'>
-    <QRCodeCanvas value={qrValue} size={200} className='w-50 h-50 m-3'/>
+    <QRCodeCanvas value={qrValue} size={200} className='w-50 h-50 my-4'/>
     </div>
     </Col>
     <Col>
     <p>Scan the QR using any UPI app on your phone
     </p>
-    <p className=''>{`QR Code will update in: ${formatTime(timeLeft)}`}</p>
+    <p className=''>QR Code will update in: <span className='text-danger'>{`${formatTime(timeLeft)}`}</span></p>
     </Col>
     </Row>
   </div>
